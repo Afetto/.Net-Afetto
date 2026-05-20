@@ -1,7 +1,4 @@
-﻿using Afetto_.Net.models;
-
-
-namespace Afetto_.Net.Models
+﻿namespace Afetto_.Net.Models
 {
     public class Cidade
     {

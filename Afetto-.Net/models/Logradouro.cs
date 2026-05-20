@@ -1,4 +1,4 @@
-﻿using Afetto_.Net.models;
+﻿using Afetto_.Net.Models;
 
 
 namespace Afetto_.Net.Models

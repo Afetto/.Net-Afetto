@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "F:\\visualstudio\\Afetto-.Net\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\services\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\services\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,16 +23,28 @@
       "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\repositories\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\services\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\services\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\models\\bairro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\models\\bairro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\models\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\models\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\models\\cidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,20 +55,24 @@
       "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\models\\estado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\models\\logradouro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\models\\logradouro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\models\\pais.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\models\\pais.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\models\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\models\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\models\\logradouro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\models\\logradouro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\afetto-.net.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\afetto-.net.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|solutionrelative:afetto-.net\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02CFE7AF-EA31-4733-3F4A-AF722F2DB875}|Afetto-.Net\\Afetto-.Net.csproj|f:\\visualstudio\\afetto-.net\\afetto-.net\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -87,103 +99,94 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Usuariocontroller.cs",
-              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Controllers\\Usuariocontroller.cs",
-              "RelativeDocumentMoniker": "Afetto-.Net\\Controllers\\Usuariocontroller.cs",
-              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Controllers\\Usuariocontroller.cs",
-              "RelativeToolTip": "Afetto-.Net\\Controllers\\Usuariocontroller.cs",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAYwAEAAAAbAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Program.cs",
+              "RelativeDocumentMoniker": "Afetto-.Net\\Program.cs",
+              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Program.cs",
+              "RelativeToolTip": "Afetto-.Net\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T00:23:55.73Z",
+              "WhenOpened": "2026-05-19T22:55:31.154Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsuarioRepository.cs",
-              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Repositories\\UsuarioRepository.cs",
-              "RelativeDocumentMoniker": "Afetto-.Net\\Repositories\\UsuarioRepository.cs",
-              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Repositories\\UsuarioRepository.cs",
-              "RelativeToolTip": "Afetto-.Net\\Repositories\\UsuarioRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Bairro.cs",
+              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Models\\Bairro.cs",
+              "RelativeDocumentMoniker": "Afetto-.Net\\Models\\Bairro.cs",
+              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Models\\Bairro.cs",
+              "RelativeToolTip": "Afetto-.Net\\Models\\Bairro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T00:06:54.941Z"
+              "WhenOpened": "2026-05-19T23:33:58.683Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IUsuarioRepository.cs",
-              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Repositories\\IUsuarioRepository.cs",
-              "RelativeDocumentMoniker": "Afetto-.Net\\Repositories\\IUsuarioRepository.cs",
-              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Repositories\\IUsuarioRepository.cs",
-              "RelativeToolTip": "Afetto-.Net\\Repositories\\IUsuarioRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "Pais.cs",
+              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Models\\Pais.cs",
+              "RelativeDocumentMoniker": "Afetto-.Net\\Models\\Pais.cs",
+              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Models\\Pais.cs",
+              "RelativeToolTip": "Afetto-.Net\\Models\\Pais.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T00:06:39.509Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UsuarioDto.cs",
-              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\DTOs\\UsuarioDto.cs",
-              "RelativeDocumentMoniker": "Afetto-.Net\\DTOs\\UsuarioDto.cs",
-              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\DTOs\\UsuarioDto.cs",
-              "RelativeToolTip": "Afetto-.Net\\DTOs\\UsuarioDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T00:05:55.346Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Estado.cs",
-              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\models\\Estado.cs",
-              "RelativeDocumentMoniker": "Afetto-.Net\\models\\Estado.cs",
-              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\models\\Estado.cs",
-              "RelativeToolTip": "Afetto-.Net\\models\\Estado.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:33:40.074Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Cidade.cs",
-              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\models\\Cidade.cs",
-              "RelativeDocumentMoniker": "Afetto-.Net\\models\\Cidade.cs",
-              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\models\\Cidade.cs",
-              "RelativeToolTip": "Afetto-.Net\\models\\Cidade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:33:47.717Z"
+              "WhenOpened": "2026-05-19T23:33:30.565Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Bairro.cs",
-              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\models\\Bairro.cs",
-              "RelativeDocumentMoniker": "Afetto-.Net\\models\\Bairro.cs",
-              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\models\\Bairro.cs",
-              "RelativeToolTip": "Afetto-.Net\\models\\Bairro.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
+              "Title": "Pet.cs",
+              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Models\\Pet.cs",
+              "RelativeDocumentMoniker": "Afetto-.Net\\Models\\Pet.cs",
+              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Models\\Pet.cs",
+              "RelativeToolTip": "Afetto-.Net\\Models\\Pet.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwAoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:33:58.683Z"
+              "WhenOpened": "2026-05-19T23:34:37.228Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Afetto-.Net\\Models\\Usuario.cs",
+              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Models\\Usuario.cs",
+              "RelativeToolTip": "Afetto-.Net\\Models\\Usuario.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAADwvxQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T23:34:26.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Afetto-.Net\\Data\\AppDbContext.cs",
               "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Data\\AppDbContext.cs",
               "RelativeToolTip": "Afetto-.Net\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBsAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAcwJQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-19T23:35:13.602Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Services\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "Afetto-.Net\\Services\\UsuarioService.cs",
+              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Services\\UsuarioService.cs",
+              "RelativeToolTip": "Afetto-.Net\\Services\\UsuarioService.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T00:07:30.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "IUsuarioService.cs",
               "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Services\\IUsuarioService.cs",
               "RelativeDocumentMoniker": "Afetto-.Net\\Services\\IUsuarioService.cs",
@@ -191,84 +194,135 @@
               "RelativeToolTip": "Afetto-.Net\\Services\\IUsuarioService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T00:07:19.363Z"
+              "WhenOpened": "2026-05-20T00:07:19.363Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsuarioService.cs",
-              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Services\\UsuarioService.cs",
-              "RelativeDocumentMoniker": "Afetto-.Net\\Services\\UsuarioService.cs",
-              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Services\\UsuarioService.cs",
-              "RelativeToolTip": "Afetto-.Net\\Services\\UsuarioService.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAmwBYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "IUsuarioRepository.cs",
+              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Repositories\\IUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Afetto-.Net\\Repositories\\IUsuarioRepository.cs",
+              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Repositories\\IUsuarioRepository.cs",
+              "RelativeToolTip": "Afetto-.Net\\Repositories\\IUsuarioRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAIwAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T00:07:30.598Z",
+              "WhenOpened": "2026-05-20T00:06:39.509Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Program.cs",
-              "RelativeDocumentMoniker": "Afetto-.Net\\Program.cs",
-              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Program.cs",
-              "RelativeToolTip": "Afetto-.Net\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Afetto-.Net\\Repositories\\UsuarioRepository.cs",
+              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "Afetto-.Net\\Repositories\\UsuarioRepository.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAADwvwEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T22:55:31.154Z"
+              "WhenOpened": "2026-05-20T00:06:54.941Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
+              "Title": "UsuarioDto.cs",
+              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\DTOs\\UsuarioDto.cs",
+              "RelativeDocumentMoniker": "Afetto-.Net\\DTOs\\UsuarioDto.cs",
+              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\DTOs\\UsuarioDto.cs",
+              "RelativeToolTip": "Afetto-.Net\\DTOs\\UsuarioDto.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAqwAIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T00:05:55.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Logradouro.cs",
-              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\models\\Logradouro.cs",
-              "RelativeDocumentMoniker": "Afetto-.Net\\models\\Logradouro.cs",
-              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\models\\Logradouro.cs",
-              "RelativeToolTip": "Afetto-.Net\\models\\Logradouro.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
+              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Models\\Logradouro.cs",
+              "RelativeDocumentMoniker": "Afetto-.Net\\Models\\Logradouro.cs",
+              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Models\\Logradouro.cs",
+              "RelativeToolTip": "Afetto-.Net\\Models\\Logradouro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-19T23:34:14.337Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Pais.cs",
-              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\models\\Pais.cs",
-              "RelativeDocumentMoniker": "Afetto-.Net\\models\\Pais.cs",
-              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\models\\Pais.cs",
-              "RelativeToolTip": "Afetto-.Net\\models\\Pais.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Title": "Estado.cs",
+              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Models\\Estado.cs",
+              "RelativeDocumentMoniker": "Afetto-.Net\\Models\\Estado.cs",
+              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Models\\Estado.cs",
+              "RelativeToolTip": "Afetto-.Net\\Models\\Estado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:33:30.565Z"
+              "WhenOpened": "2026-05-19T23:33:40.074Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Pet.cs",
-              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\models\\Pet.cs",
-              "RelativeDocumentMoniker": "Afetto-.Net\\models\\Pet.cs",
-              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\models\\Pet.cs",
-              "RelativeToolTip": "Afetto-.Net\\models\\Pet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "Cidade.cs",
+              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Models\\Cidade.cs",
+              "RelativeDocumentMoniker": "Afetto-.Net\\Models\\Cidade.cs",
+              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Models\\Cidade.cs",
+              "RelativeToolTip": "Afetto-.Net\\Models\\Cidade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:34:37.228Z"
+              "WhenOpened": "2026-05-19T23:33:47.717Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\models\\Usuario.cs",
-              "RelativeDocumentMoniker": "Afetto-.Net\\models\\Usuario.cs",
-              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\models\\Usuario.cs",
-              "RelativeToolTip": "Afetto-.Net\\models\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T23:34:26.113Z"
+              "DocumentIndex": 9,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Afetto-.Net\\appsettings.Development.json",
+              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\appsettings.Development.json",
+              "RelativeToolTip": "Afetto-.Net\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-20T00:43:29.33Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "Afetto-.Net.csproj",
+              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Afetto-.Net.csproj",
+              "RelativeDocumentMoniker": "Afetto-.Net\\Afetto-.Net.csproj",
+              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Afetto-.Net.csproj",
+              "RelativeToolTip": "Afetto-.Net\\Afetto-.Net.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-20T00:37:30.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\appsettings.json",
+              "RelativeDocumentMoniker": "Afetto-.Net\\appsettings.json",
+              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\appsettings.json",
+              "RelativeToolTip": "Afetto-.Net\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-20T00:27:36.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Usuariocontroller.cs",
+              "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Controllers\\Usuariocontroller.cs",
+              "RelativeDocumentMoniker": "Afetto-.Net\\Controllers\\Usuariocontroller.cs",
+              "ToolTip": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Controllers\\Usuariocontroller.cs",
+              "RelativeToolTip": "Afetto-.Net\\Controllers\\Usuariocontroller.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAmwAEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T00:23:55.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "F:\\visualstudio\\Afetto-.Net\\Afetto-.Net\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Afetto-.Net\\Controllers\\WeatherForecastController.cs",

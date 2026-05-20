@@ -1,0 +1,6 @@
+@Afetto_.Net_HostAddress = http://localhost:5150
+
+GET {{Afetto_.Net_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -230,7 +230,7 @@ Sem body. Retorna **204 No Content** em caso de sucesso.
 
 ## 👥 Equipe
 
-Desenvolvido pela equipe **PetOS** — Graduação em Tecnologia, FIAP 2026.
+Desenvolvido pela equipe **Afetto** — Graduação em Tecnologia, FIAP 2026.
 
 | Nome | GitHub |
 |---|---|

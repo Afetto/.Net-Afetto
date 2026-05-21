@@ -20,7 +20,7 @@ API RESTful desenvolvida em **ASP.NET Core** para o projeto **Afetto**, sistema 
 
 ## 📖 Sobre o Projeto
 
-O **PetOS** resolve um gap crítico do mercado pet brasileiro: tutores só levam seus animais ao veterinário em situações de urgência, gerando baixa recorrência nas clínicas e cuidado reativo em vez de preventivo.
+O **Afetto** resolve um gap crítico do mercado pet brasileiro: tutores só levam seus animais ao veterinário em situações de urgência, gerando baixa recorrência nas clínicas e cuidado reativo em vez de preventivo.
 
 A API gerencia o cadastro completo de usuários (tutores) com hierarquia geográfica completa (País → Estado → Cidade → Bairro → Logradouro), servindo como base para as funcionalidades de acompanhamento de saúde dos pets.
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Afetto-.Net")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccb5d9686a7626fee811cfe98b915f3bcfad5660")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62616d9c8a377f20bcf4496bb7b495759f1a343d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Afetto-.Net")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Afetto-.Net")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

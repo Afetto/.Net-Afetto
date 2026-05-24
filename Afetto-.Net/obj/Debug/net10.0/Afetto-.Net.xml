@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Afetto-.Net</name>
+    </assembly>
+    <members>
+        <member name="M:Afetto_.Net.Controllers.UsuarioController.GetAll">
+            <summary>Retorna todos os usuários cadastrados.</summary>
+        </member>
+        <member name="M:Afetto_.Net.Controllers.UsuarioController.GetById(System.Guid)">
+            <summary>Retorna um usuário pelo ID.</summary>
+        </member>
+        <member name="M:Afetto_.Net.Controllers.UsuarioController.GetByEmail(System.String)">
+            <summary>Retorna um usuário pelo e-mail.</summary>
+        </member>
+        <member name="M:Afetto_.Net.Controllers.UsuarioController.GetByCpf(System.String)">
+            <summary>Retorna um usuário pelo CPF.</summary>
+        </member>
+        <member name="M:Afetto_.Net.Controllers.UsuarioController.GetByLogradouro(System.Guid)">
+            <summary>Retorna todos os usuários de um logradouro.</summary>
+        </member>
+        <member name="M:Afetto_.Net.Controllers.UsuarioController.GetByCidade(System.Guid)">
+            <summary>Retorna todos os usuários de uma cidade.</summary>
+        </member>
+        <member name="M:Afetto_.Net.Controllers.UsuarioController.Create(Afetto_.Net.DTOs.CreateUsuarioRequest)">
+            <summary>Cria um novo usuário.</summary>
+        </member>
+        <member name="M:Afetto_.Net.Controllers.UsuarioController.Update(System.Guid,Afetto_.Net.DTOs.UpdateUsuarioRequest)">
+            <summary>Atualiza os dados de um usuário existente.</summary>
+        </member>
+        <member name="M:Afetto_.Net.Controllers.UsuarioController.Delete(System.Guid)">
+            <summary>Remove um usuário pelo ID.</summary>
+        </member>
+        <member name="T:Afetto.Net.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:Afetto.Net.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Afetto.Net.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Afetto.Net.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Program">
+            <summary>
+            Auto-generated public partial Program class for top-level statement apps.
+            </summary>
+        </member>
+    </members>
+</doc>

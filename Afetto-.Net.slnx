@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="Afetto-.Net.Tests.Integration/Afetto-.Net.Tests.Integration.csproj" Id="59c153dc-dc39-4393-b467-0be1a9419951" />
+  <Project Path="Afetto-.Net.Tests.Unit/Afetto-.Net.Tests.Unit.csproj" Id="60cd61fd-55f3-445b-9798-a33a930ecb20" />
   <Project Path="Afetto-.Net/Afetto-.Net.csproj" />
 </Solution>

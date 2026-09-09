@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "Afetto API",
-    "description": "API do sistema Afetto — gerenciamento de saúde contínua de pets.",
+    "title": "PetOS API",
+    "description": "API do sistema PetOS — gerenciamento de saúde contínua de pets.",
     "version": "v1"
   },
   "paths": {

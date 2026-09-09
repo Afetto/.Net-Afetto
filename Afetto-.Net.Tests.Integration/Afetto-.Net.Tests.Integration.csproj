@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<IsPackable>false</IsPackable>
+		<RootNamespace>Afetto_.Net.Tests.Integration</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- xUnit -->
+		<PackageReference Include="xunit" Version="2.9.0" />
+		<PackageReference Include="xunit.runner.visualstudio" Version="2.8.2">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+
+		<!-- WebApplicationFactory -->
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="9.0.0" />
+
+		<!-- FluentAssertions -->
+		<PackageReference Include="FluentAssertions" Version="6.12.1" />
+
+		<!-- EF Core InMemory para testes sem Oracle -->
+		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.0" />
+	</ItemGroup>
+
+	<!-- Referência ao projeto principal -->
+	<ItemGroup>
+		<ProjectReference Include="..\Afetto-.Net\Afetto-.Net.csproj" />
+	</ItemGroup>
+
+</Project>

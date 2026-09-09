@@ -11,7 +11,15 @@
           "BCrypt.Net-Next": "4.0.3",
           "Microsoft.EntityFrameworkCore": "9.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.0",
+          "OpenTelemetry.Exporter.Console": "1.9.0",
+          "OpenTelemetry.Extensions.Hosting": "1.9.0",
+          "OpenTelemetry.Instrumentation.AspNetCore": "1.9.0",
+          "OpenTelemetry.Instrumentation.EntityFrameworkCore": "1.0.0-beta.12",
+          "OpenTelemetry.Instrumentation.Runtime": "1.9.0",
           "Oracle.EntityFrameworkCore": "9.23.60",
+          "Serilog.AspNetCore": "8.0.3",
+          "Serilog.Enrichers.Environment": "3.0.1",
+          "Serilog.Enrichers.Thread": "4.0.0",
           "Swashbuckle.AspNetCore": "6.9.0"
         },
         "runtime": {
@@ -398,6 +406,91 @@
           }
         }
       },
+      "OpenTelemetry/1.9.0": {
+        "dependencies": {
+          "OpenTelemetry.Api.ProviderBuilderExtensions": "1.9.0"
+        },
+        "runtime": {
+          "lib/net8.0/OpenTelemetry.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.9.0.1312"
+          }
+        }
+      },
+      "OpenTelemetry.Api/1.9.0": {
+        "runtime": {
+          "lib/net8.0/OpenTelemetry.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.9.0.1312"
+          }
+        }
+      },
+      "OpenTelemetry.Api.ProviderBuilderExtensions/1.9.0": {
+        "dependencies": {
+          "OpenTelemetry.Api": "1.9.0"
+        },
+        "runtime": {
+          "lib/net8.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.9.0.1312"
+          }
+        }
+      },
+      "OpenTelemetry.Exporter.Console/1.9.0": {
+        "dependencies": {
+          "OpenTelemetry": "1.9.0"
+        },
+        "runtime": {
+          "lib/net8.0/OpenTelemetry.Exporter.Console.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.9.0.1312"
+          }
+        }
+      },
+      "OpenTelemetry.Extensions.Hosting/1.9.0": {
+        "dependencies": {
+          "OpenTelemetry": "1.9.0"
+        },
+        "runtime": {
+          "lib/net8.0/OpenTelemetry.Extensions.Hosting.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.9.0.1312"
+          }
+        }
+      },
+      "OpenTelemetry.Instrumentation.AspNetCore/1.9.0": {
+        "dependencies": {
+          "OpenTelemetry.Api.ProviderBuilderExtensions": "1.9.0"
+        },
+        "runtime": {
+          "lib/net8.0/OpenTelemetry.Instrumentation.AspNetCore.dll": {
+            "assemblyVersion": "1.9.0.42",
+            "fileVersion": "1.9.0.42"
+          }
+        }
+      },
+      "OpenTelemetry.Instrumentation.EntityFrameworkCore/1.0.0-beta.12": {
+        "dependencies": {
+          "OpenTelemetry.Api.ProviderBuilderExtensions": "1.9.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/OpenTelemetry.Instrumentation.EntityFrameworkCore.dll": {
+            "assemblyVersion": "1.0.0.48",
+            "fileVersion": "1.0.0.48"
+          }
+        }
+      },
+      "OpenTelemetry.Instrumentation.Runtime/1.9.0": {
+        "dependencies": {
+          "OpenTelemetry.Api": "1.9.0"
+        },
+        "runtime": {
+          "lib/net6.0/OpenTelemetry.Instrumentation.Runtime.dll": {
+            "assemblyVersion": "1.9.0.57",
+            "fileVersion": "1.9.0.57"
+          }
+        }
+      },
       "Oracle.EntityFrameworkCore/9.23.60": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "9.0.0",
@@ -419,6 +512,132 @@
           "lib/net8.0/Oracle.ManagedDataAccess.dll": {
             "assemblyVersion": "23.1.0.0",
             "fileVersion": "23.1.0.0"
+          }
+        }
+      },
+      "Serilog/4.0.0": {
+        "runtime": {
+          "lib/net8.0/Serilog.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "Serilog.AspNetCore/8.0.3": {
+        "dependencies": {
+          "Serilog": "4.0.0",
+          "Serilog.Extensions.Hosting": "8.0.0",
+          "Serilog.Formatting.Compact": "2.0.0",
+          "Serilog.Settings.Configuration": "8.0.4",
+          "Serilog.Sinks.Console": "5.0.0",
+          "Serilog.Sinks.Debug": "2.0.0",
+          "Serilog.Sinks.File": "5.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Serilog.AspNetCore.dll": {
+            "assemblyVersion": "8.0.3.0",
+            "fileVersion": "8.0.3.0"
+          }
+        }
+      },
+      "Serilog.Enrichers.Environment/3.0.1": {
+        "dependencies": {
+          "Serilog": "4.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Serilog.Enrichers.Environment.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "Serilog.Enrichers.Thread/4.0.0": {
+        "dependencies": {
+          "Serilog": "4.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Serilog.Enrichers.Thread.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "Serilog.Extensions.Hosting/8.0.0": {
+        "dependencies": {
+          "Serilog": "4.0.0",
+          "Serilog.Extensions.Logging": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Serilog.Extensions.Hosting.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        }
+      },
+      "Serilog.Extensions.Logging/8.0.0": {
+        "dependencies": {
+          "Serilog": "4.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Serilog.Extensions.Logging.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        }
+      },
+      "Serilog.Formatting.Compact/2.0.0": {
+        "dependencies": {
+          "Serilog": "4.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/Serilog.Formatting.Compact.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Serilog.Settings.Configuration/8.0.4": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyModel": "9.0.0",
+          "Serilog": "4.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Serilog.Settings.Configuration.dll": {
+            "assemblyVersion": "8.0.4.0",
+            "fileVersion": "8.0.4.0"
+          }
+        }
+      },
+      "Serilog.Sinks.Console/5.0.0": {
+        "dependencies": {
+          "Serilog": "4.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/Serilog.Sinks.Console.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.0"
+          }
+        }
+      },
+      "Serilog.Sinks.Debug/2.0.0": {
+        "dependencies": {
+          "Serilog": "4.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Serilog.Sinks.Debug.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Serilog.Sinks.File/5.0.0": {
+        "dependencies": {
+          "Serilog": "4.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/Serilog.Sinks.File.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.0"
           }
         }
       },
@@ -720,6 +939,62 @@
       "path": "mono.texttemplating/3.0.0",
       "hashPath": "mono.texttemplating.3.0.0.nupkg.sha512"
     },
+    "OpenTelemetry/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7scS6BUhwYeSXEDGhCxMSezmvyCoDU5kFQbmfyW9iVvVTcWhec+1KIN33/LOCdBXRkzt2y7+g03mkdAB0XZ9Fw==",
+      "path": "opentelemetry/1.9.0",
+      "hashPath": "opentelemetry.1.9.0.nupkg.sha512"
+    },
+    "OpenTelemetry.Api/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Xz8ZvM1Lm0m7BbtGBnw2JlPo++YKyMp08zMK5p0mf+cIi5jeMt2+QsYu9X6YEAbjCxBQYwEak5Z8sY6Ig2WcwQ==",
+      "path": "opentelemetry.api/1.9.0",
+      "hashPath": "opentelemetry.api.1.9.0.nupkg.sha512"
+    },
+    "OpenTelemetry.Api.ProviderBuilderExtensions/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L0D4LBR5JFmwLun5MCWVGapsJLV0ANZ+XXu9NEI3JE/HRKkRuUO+J2MuHD5DBwiU//QMYYM4B22oev1hVLoHDQ==",
+      "path": "opentelemetry.api.providerbuilderextensions/1.9.0",
+      "hashPath": "opentelemetry.api.providerbuilderextensions.1.9.0.nupkg.sha512"
+    },
+    "OpenTelemetry.Exporter.Console/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TbScDLSc6kcji+/wZYIf8/HBV2SnttzN7PNxr3TYczlmGlU4K2ugujp6seSktEO4OaAvKRd7Y3CG3SKNj0C+1Q==",
+      "path": "opentelemetry.exporter.console/1.9.0",
+      "hashPath": "opentelemetry.exporter.console.1.9.0.nupkg.sha512"
+    },
+    "OpenTelemetry.Extensions.Hosting/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QBQPrKDVCXxTBE+r8tgjmFNKKHi4sKyczmip2XGUcjy8kk3quUNhttnjiMqC4sU50Hemmn4i5752Co26pnKe3A==",
+      "path": "opentelemetry.extensions.hosting/1.9.0",
+      "hashPath": "opentelemetry.extensions.hosting.1.9.0.nupkg.sha512"
+    },
+    "OpenTelemetry.Instrumentation.AspNetCore/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-x4HuWBw1rbWZUh5j8/GpXz3xa7JnrTuKne+ACmBqvcoO/rNGkG7HayRruwoQ7gf52xpMtRGr4gxlhLW8eU0EiQ==",
+      "path": "opentelemetry.instrumentation.aspnetcore/1.9.0",
+      "hashPath": "opentelemetry.instrumentation.aspnetcore.1.9.0.nupkg.sha512"
+    },
+    "OpenTelemetry.Instrumentation.EntityFrameworkCore/1.0.0-beta.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L/wZDi3MXyL2OsaxykjNovTgNhGq0kVtWNcCoqzOctxYMnCUGAQHYA9XwZGpad1vnnFxHOcN3oW4qFAQuYpKUA==",
+      "path": "opentelemetry.instrumentation.entityframeworkcore/1.0.0-beta.12",
+      "hashPath": "opentelemetry.instrumentation.entityframeworkcore.1.0.0-beta.12.nupkg.sha512"
+    },
+    "OpenTelemetry.Instrumentation.Runtime/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6raJb9Pvi1CaBB59SX86Mr9NQiQbiv9ialO+cQKFRGCq3Bl2WC8cTTcbfGtaRX0quqWnZC/dK7xrXuOuYcwANA==",
+      "path": "opentelemetry.instrumentation.runtime/1.9.0",
+      "hashPath": "opentelemetry.instrumentation.runtime.1.9.0.nupkg.sha512"
+    },
     "Oracle.EntityFrameworkCore/9.23.60": {
       "type": "package",
       "serviceable": true,
@@ -733,6 +1008,83 @@
       "sha512": "sha512-Oc8AX7xme05xrp4/aCxKBH4+bpWgMCFafXI7LbLO/7OBMJLZRXhMtejDgIb8aYvIVyV7vSdAy3LkCYcJorxn1A==",
       "path": "oracle.manageddataaccess.core/23.6.1",
       "hashPath": "oracle.manageddataaccess.core.23.6.1.nupkg.sha512"
+    },
+    "Serilog/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2jDkUrSh5EofOp7Lx5Zgy0EB+7hXjjxE2ktTb1WVQmU00lDACR2TdROGKU0K1pDTBSJBN1PqgYpgOZF8mL7NJw==",
+      "path": "serilog/4.0.0",
+      "hashPath": "serilog.4.0.0.nupkg.sha512"
+    },
+    "Serilog.AspNetCore/8.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Y5at41mc0OV982DEJslBKHd6uzcWO6POwR3QceJ6gtpMPxCzm4+FElGPF0RdaTD7MGsP6XXE05LMbSi0NO+sXg==",
+      "path": "serilog.aspnetcore/8.0.3",
+      "hashPath": "serilog.aspnetcore.8.0.3.nupkg.sha512"
+    },
+    "Serilog.Enrichers.Environment/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9BqCE4C9FF+/rJb/CsQwe7oVf44xqkOvMwX//CUxvUR25lFL4tSS6iuxE5eW07quby1BAyAEP+vM6TWsnT3iqw==",
+      "path": "serilog.enrichers.environment/3.0.1",
+      "hashPath": "serilog.enrichers.environment.3.0.1.nupkg.sha512"
+    },
+    "Serilog.Enrichers.Thread/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-C7BK25a1rhUyr+Tp+1BYcVlBJq7M2VCHlIgnwoIUVJcicM9jYcvQK18+OeHiXw7uLPSjqWxJIp1EfaZ/RGmEwA==",
+      "path": "serilog.enrichers.thread/4.0.0",
+      "hashPath": "serilog.enrichers.thread.4.0.0.nupkg.sha512"
+    },
+    "Serilog.Extensions.Hosting/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-db0OcbWeSCvYQkHWu6n0v40N4kKaTAXNjlM3BKvcbwvNzYphQFcBR+36eQ/7hMMwOkJvAyLC2a9/jNdUL5NjtQ==",
+      "path": "serilog.extensions.hosting/8.0.0",
+      "hashPath": "serilog.extensions.hosting.8.0.0.nupkg.sha512"
+    },
+    "Serilog.Extensions.Logging/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YEAMWu1UnWgf1c1KP85l1SgXGfiVo0Rz6x08pCiPOIBt2Qe18tcZLvdBUuV5o1QHvrs8FAry9wTIhgBRtjIlEg==",
+      "path": "serilog.extensions.logging/8.0.0",
+      "hashPath": "serilog.extensions.logging.8.0.0.nupkg.sha512"
+    },
+    "Serilog.Formatting.Compact/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ob6z3ikzFM3D1xalhFuBIK1IOWf+XrQq+H4KeH4VqBcPpNcmUgZlRQ2h3Q7wvthpdZBBoY86qZOI2LCXNaLlNA==",
+      "path": "serilog.formatting.compact/2.0.0",
+      "hashPath": "serilog.formatting.compact.2.0.0.nupkg.sha512"
+    },
+    "Serilog.Settings.Configuration/8.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pkxvq0umBKK8IKFJc1aV5S/HGRG/NIxJ6FV42KaTPLfDmBOAbBUB1m5gqqlGxzEa1MgDDWtQlWJdHTSxVWNx+Q==",
+      "path": "serilog.settings.configuration/8.0.4",
+      "hashPath": "serilog.settings.configuration.8.0.4.nupkg.sha512"
+    },
+    "Serilog.Sinks.Console/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IZ6bn79k+3SRXOBpwSOClUHikSkp2toGPCZ0teUkscv4dpDg9E2R2xVsNkLmwddE4OpNVO3N0xiYsAH556vN8Q==",
+      "path": "serilog.sinks.console/5.0.0",
+      "hashPath": "serilog.sinks.console.5.0.0.nupkg.sha512"
+    },
+    "Serilog.Sinks.Debug/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Y6g3OBJ4JzTyyw16fDqtFcQ41qQAydnEvEqmXjhwhgjsnG/FaJ8GUqF5ldsC/bVkK8KYmqrPhDO+tm4dF6xx4A==",
+      "path": "serilog.sinks.debug/2.0.0",
+      "hashPath": "serilog.sinks.debug.2.0.0.nupkg.sha512"
+    },
+    "Serilog.Sinks.File/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uwV5hdhWPwUH1szhO8PJpFiahqXmzPzJT/sOijH/kFgUx+cyoDTMM8MHD0adw9+Iem6itoibbUXHYslzXsLEAg==",
+      "path": "serilog.sinks.file/5.0.0",
+      "hashPath": "serilog.sinks.file.5.0.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.9.0": {
       "type": "package",

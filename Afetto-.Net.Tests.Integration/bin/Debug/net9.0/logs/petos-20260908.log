@@ -1,0 +1,697 @@
+[2026-09-08 21:41:15 INF]  Iniciando PetOS API...
+[2026-09-08 21:41:15 FTL]  PetOS API encerrada inesperadamente.
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at Afetto_.Net.Tests.Integration.Fixtures.PetOSWebApplicationFactory.<>c.<ConfigureWebHost>b__0_0(IServiceCollection services) in F:\visualstudio\Afetto-.Net\Afetto-.Net.Tests.Integration\Fixtures\PetOSWebApplicationFactory.cs:line 34
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.HostBuilderAdapter.ApplyChanges()
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Program.cs:line 106
+[2026-09-08 21:41:15 INF]  Iniciando PetOS API...
+[2026-09-08 21:41:15 FTL]  PetOS API encerrada inesperadamente.
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at Afetto_.Net.Tests.Integration.Fixtures.PetOSWebApplicationFactory.<>c.<ConfigureWebHost>b__0_0(IServiceCollection services) in F:\visualstudio\Afetto-.Net\Afetto-.Net.Tests.Integration\Fixtures\PetOSWebApplicationFactory.cs:line 34
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.HostBuilderAdapter.ApplyChanges()
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Program.cs:line 106
+[2026-09-08 21:41:15 INF]  Iniciando PetOS API...
+[2026-09-08 21:41:15 FTL]  PetOS API encerrada inesperadamente.
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at Afetto_.Net.Tests.Integration.Fixtures.PetOSWebApplicationFactory.<>c.<ConfigureWebHost>b__0_0(IServiceCollection services) in F:\visualstudio\Afetto-.Net\Afetto-.Net.Tests.Integration\Fixtures\PetOSWebApplicationFactory.cs:line 34
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.HostBuilderAdapter.ApplyChanges()
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Program.cs:line 106
+[2026-09-08 21:41:15 INF]  Iniciando PetOS API...
+[2026-09-08 21:41:15 FTL]  PetOS API encerrada inesperadamente.
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at Afetto_.Net.Tests.Integration.Fixtures.PetOSWebApplicationFactory.<>c.<ConfigureWebHost>b__0_0(IServiceCollection services) in F:\visualstudio\Afetto-.Net\Afetto-.Net.Tests.Integration\Fixtures\PetOSWebApplicationFactory.cs:line 34
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.HostBuilderAdapter.ApplyChanges()
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Program.cs:line 106
+[2026-09-08 21:41:15 INF]  Iniciando PetOS API...
+[2026-09-08 21:41:15 FTL]  PetOS API encerrada inesperadamente.
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at Afetto_.Net.Tests.Integration.Fixtures.PetOSWebApplicationFactory.<>c.<ConfigureWebHost>b__0_0(IServiceCollection services) in F:\visualstudio\Afetto-.Net\Afetto-.Net.Tests.Integration\Fixtures\PetOSWebApplicationFactory.cs:line 34
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.HostBuilderAdapter.ApplyChanges()
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Program.cs:line 106
+[2026-09-08 21:41:15 INF]  Iniciando PetOS API...
+[2026-09-08 21:41:15 FTL]  PetOS API encerrada inesperadamente.
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at Afetto_.Net.Tests.Integration.Fixtures.PetOSWebApplicationFactory.<>c.<ConfigureWebHost>b__0_0(IServiceCollection services) in F:\visualstudio\Afetto-.Net\Afetto-.Net.Tests.Integration\Fixtures\PetOSWebApplicationFactory.cs:line 34
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.HostBuilderAdapter.ApplyChanges()
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Program.cs:line 106
+[2026-09-08 21:41:15 INF]  Iniciando PetOS API...
+[2026-09-08 21:41:15 FTL]  PetOS API encerrada inesperadamente.
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at Afetto_.Net.Tests.Integration.Fixtures.PetOSWebApplicationFactory.<>c.<ConfigureWebHost>b__0_0(IServiceCollection services) in F:\visualstudio\Afetto-.Net\Afetto-.Net.Tests.Integration\Fixtures\PetOSWebApplicationFactory.cs:line 34
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.HostBuilderAdapter.ApplyChanges()
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Program.cs:line 106
+[2026-09-08 21:41:15 INF]  Iniciando PetOS API...
+[2026-09-08 21:41:15 FTL]  PetOS API encerrada inesperadamente.
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at Afetto_.Net.Tests.Integration.Fixtures.PetOSWebApplicationFactory.<>c.<ConfigureWebHost>b__0_0(IServiceCollection services) in F:\visualstudio\Afetto-.Net\Afetto-.Net.Tests.Integration\Fixtures\PetOSWebApplicationFactory.cs:line 34
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.HostBuilderAdapter.ApplyChanges()
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Program.cs:line 106
+[2026-09-08 21:41:15 INF]  Iniciando PetOS API...
+[2026-09-08 21:41:15 FTL]  PetOS API encerrada inesperadamente.
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at Afetto_.Net.Tests.Integration.Fixtures.PetOSWebApplicationFactory.<>c.<ConfigureWebHost>b__0_0(IServiceCollection services) in F:\visualstudio\Afetto-.Net\Afetto-.Net.Tests.Integration\Fixtures\PetOSWebApplicationFactory.cs:line 34
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.HostBuilderAdapter.ApplyChanges()
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Program.cs:line 106
+[2026-09-08 21:41:15 INF]  Iniciando PetOS API...
+[2026-09-08 21:41:15 FTL]  PetOS API encerrada inesperadamente.
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at Afetto_.Net.Tests.Integration.Fixtures.PetOSWebApplicationFactory.<>c.<ConfigureWebHost>b__0_0(IServiceCollection services) in F:\visualstudio\Afetto-.Net\Afetto-.Net.Tests.Integration\Fixtures\PetOSWebApplicationFactory.cs:line 34
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.HostBuilderAdapter.ApplyChanges()
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Program.cs:line 106
+[2026-09-08 21:41:15 INF]  Iniciando PetOS API...
+[2026-09-08 21:41:15 FTL]  PetOS API encerrada inesperadamente.
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at Afetto_.Net.Tests.Integration.Fixtures.PetOSWebApplicationFactory.<>c.<ConfigureWebHost>b__0_0(IServiceCollection services) in F:\visualstudio\Afetto-.Net\Afetto-.Net.Tests.Integration\Fixtures\PetOSWebApplicationFactory.cs:line 34
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.HostBuilderAdapter.ApplyChanges()
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Program.cs:line 106
+[2026-09-08 21:41:15 INF]  Iniciando PetOS API...
+[2026-09-08 21:41:15 FTL]  PetOS API encerrada inesperadamente.
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at Afetto_.Net.Tests.Integration.Fixtures.PetOSWebApplicationFactory.<>c.<ConfigureWebHost>b__0_0(IServiceCollection services) in F:\visualstudio\Afetto-.Net\Afetto-.Net.Tests.Integration\Fixtures\PetOSWebApplicationFactory.cs:line 34
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.HostBuilderAdapter.ApplyChanges()
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Program.cs:line 106
+[2026-09-08 21:41:15 INF]  Iniciando PetOS API...
+[2026-09-08 21:41:15 FTL]  PetOS API encerrada inesperadamente.
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at Afetto_.Net.Tests.Integration.Fixtures.PetOSWebApplicationFactory.<>c.<ConfigureWebHost>b__0_0(IServiceCollection services) in F:\visualstudio\Afetto-.Net\Afetto-.Net.Tests.Integration\Fixtures\PetOSWebApplicationFactory.cs:line 34
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.HostBuilderAdapter.ApplyChanges()
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Program.cs:line 106
+[2026-09-08 21:41:15 INF]  Iniciando PetOS API...
+[2026-09-08 21:41:15 FTL]  PetOS API encerrada inesperadamente.
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at Afetto_.Net.Tests.Integration.Fixtures.PetOSWebApplicationFactory.<>c.<ConfigureWebHost>b__0_0(IServiceCollection services) in F:\visualstudio\Afetto-.Net\Afetto-.Net.Tests.Integration\Fixtures\PetOSWebApplicationFactory.cs:line 34
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.HostBuilderAdapter.ApplyChanges()
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Program.cs:line 106
+[2026-09-08 21:47:03 INF]  Iniciando PetOS API...
+[2026-09-08 21:47:03 INF]  PetOS API iniciada com sucesso.
+[2026-09-08 21:47:03 WRN] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware Failed to determine the https port for redirect.
+[2026-09-08 21:47:03 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /api/usuarios respondeu 400 em 108.2931ms
+[2026-09-08 21:47:03 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP PUT /api/usuarios/a3ed746b-b340-4964-9bd0-c218c41892da respondeu 400 em 10.1580ms
+[2026-09-08 21:47:03 ERR] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/usuarios/logradouro/cc64b602-a3d0-41f3-a28a-184ddcea03ca respondeu 500 em 13.1557ms
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at Afetto_.Net.Repositories.UsuarioRepository.QueryComEndereco() in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 18
+   at Afetto_.Net.Repositories.UsuarioRepository.GetByLogradouroAsync(Guid logradouroId) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 41
+   at Afetto_.Net.Services.UsuarioService.GetByLogradouroAsync(Guid logradouroId) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Services\UsuarioService.cs:line 48
+   at Afetto_.Net.Controllers.UsuarioController.GetByLogradouro(Guid logradouroId) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Controllers\Usuariocontroller.cs:line 73
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[2026-09-08 21:47:03 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /api/usuarios respondeu 400 em 1.0712ms
+[2026-09-08 21:47:03 ERR] Serilog.AspNetCore.RequestLoggingMiddleware HTTP DELETE /api/usuarios/ea6244d1-a7cb-49c1-bd6a-fb1e72ff66f7 respondeu 500 em 3.9389ms
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at Afetto_.Net.Repositories.UsuarioRepository.QueryComEndereco() in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 18
+   at Afetto_.Net.Repositories.UsuarioRepository.GetByIdAsync(Guid id) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 30
+   at Afetto_.Net.Services.UsuarioService.DeleteAsync(Guid id) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Services\UsuarioService.cs:line 115
+   at Afetto_.Net.Controllers.UsuarioController.Delete(Guid id) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Controllers\Usuariocontroller.cs:line 143
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[2026-09-08 21:47:03 ERR] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/usuarios/cidade/5dbc8c8f-4e5e-4b16-ae73-d4516f851221 respondeu 500 em 4.2538ms
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at Afetto_.Net.Repositories.UsuarioRepository.QueryComEndereco() in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 18
+   at Afetto_.Net.Repositories.UsuarioRepository.GetByCidadeAsync(Guid cidadeId) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 46
+   at Afetto_.Net.Services.UsuarioService.GetByCidadeAsync(Guid cidadeId) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Services\UsuarioService.cs:line 55
+   at Afetto_.Net.Controllers.UsuarioController.GetByCidade(Guid cidadeId) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Controllers\Usuariocontroller.cs:line 86
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[2026-09-08 21:47:03 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/usuarios/nao-e-um-guid respondeu 404 em 0.1074ms
+[2026-09-08 21:47:03 ERR] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/usuarios/95766862-92cb-400f-9233-b9c8505a561d respondeu 500 em 3.0861ms
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at Afetto_.Net.Repositories.UsuarioRepository.QueryComEndereco() in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 18
+   at Afetto_.Net.Repositories.UsuarioRepository.GetByIdAsync(Guid id) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 30
+   at Afetto_.Net.Services.UsuarioService.GetByIdAsync(Guid id) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Services\UsuarioService.cs:line 27
+   at Afetto_.Net.Controllers.UsuarioController.GetById(Guid id) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Controllers\Usuariocontroller.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[2026-09-08 21:47:03 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP PUT /api/usuarios/fb8582d6-a41d-4dfe-8ba7-3ac001578ca1 respondeu 400 em 3.3739ms
+[2026-09-08 21:47:03 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /health/live respondeu 200 em 6.9178ms
+[2026-09-08 21:47:03 ERR] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/usuarios/cpf/00000000000 respondeu 500 em 4.1107ms
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at Afetto_.Net.Repositories.UsuarioRepository.QueryComEndereco() in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 18
+   at Afetto_.Net.Repositories.UsuarioRepository.GetByCpfAsync(String cpf) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 37
+   at Afetto_.Net.Services.UsuarioService.GetByCpfAsync(String cpf) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Services\UsuarioService.cs:line 41
+   at Afetto_.Net.Controllers.UsuarioController.GetByCpf(String cpf) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Controllers\Usuariocontroller.cs:line 60
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[2026-09-08 21:47:03 ERR] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/usuarios/email/naoexiste@email.com respondeu 500 em 3.3717ms
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at Afetto_.Net.Repositories.UsuarioRepository.QueryComEndereco() in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 18
+   at Afetto_.Net.Repositories.UsuarioRepository.GetByEmailAsync(String email) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 33
+   at Afetto_.Net.Services.UsuarioService.GetByEmailAsync(String email) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Services\UsuarioService.cs:line 34
+   at Afetto_.Net.Controllers.UsuarioController.GetByEmail(String email) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Controllers\Usuariocontroller.cs:line 47
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[2026-09-08 21:47:04 ERR] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/usuarios respondeu 500 em 3.3382ms
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at Afetto_.Net.Repositories.UsuarioRepository.QueryComEndereco() in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 18
+   at Afetto_.Net.Repositories.UsuarioRepository.GetAllAsync() in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 27
+   at Afetto_.Net.Services.UsuarioService.GetAllAsync() in F:\visualstudio\Afetto-.Net\Afetto-.Net\Services\UsuarioService.cs:line 20
+   at Afetto_.Net.Controllers.UsuarioController.GetAll() in F:\visualstudio\Afetto-.Net\Afetto-.Net\Controllers\Usuariocontroller.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[2026-09-08 21:47:04 ERR] Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService Health check oracle with status "Unhealthy" completed after 2.4423ms with message 'Oracle Database inacessível.'
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.Microsoft.EntityFrameworkCore.Storage.IDatabaseFacadeDependenciesAccessor.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetFacadeDependencies(DatabaseFacade databaseFacade)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at Afetto_.Net.HealthChecks.OracleHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in F:\visualstudio\Afetto-.Net\Afetto-.Net\HealthChecks\OracleHealthCheck.cs:line 23
+[2026-09-08 21:47:04 ERR] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /health respondeu 503 em 13.0643ms
+[2026-09-08 21:50:26 INF]  Iniciando PetOS API...
+[2026-09-08 21:50:26 INF]  PetOS API iniciada com sucesso.
+[2026-09-08 21:50:26 WRN] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware Failed to determine the https port for redirect.
+[2026-09-08 21:50:26 ERR] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/usuarios/c842bf9e-5f2b-4b94-b7e6-0969d204de03 respondeu 500 em 79.6505ms
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at Afetto_.Net.Repositories.UsuarioRepository.QueryComEndereco() in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 18
+   at Afetto_.Net.Repositories.UsuarioRepository.GetByIdAsync(Guid id) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 30
+   at Afetto_.Net.Services.UsuarioService.GetByIdAsync(Guid id) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Services\UsuarioService.cs:line 27
+   at Afetto_.Net.Controllers.UsuarioController.GetById(Guid id) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Controllers\Usuariocontroller.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[2026-09-08 21:50:27 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /api/usuarios respondeu 400 em 38.2642ms
+[2026-09-08 21:50:27 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP PUT /api/usuarios/467f6475-c5c6-4933-a103-ff3eeb7b2103 respondeu 400 em 8.1176ms
+[2026-09-08 21:50:27 ERR] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/usuarios/logradouro/ed8e5530-41bc-4506-98aa-610408e00002 respondeu 500 em 4.3329ms
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at Afetto_.Net.Repositories.UsuarioRepository.QueryComEndereco() in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 18
+   at Afetto_.Net.Repositories.UsuarioRepository.GetByLogradouroAsync(Guid logradouroId) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 41
+   at Afetto_.Net.Services.UsuarioService.GetByLogradouroAsync(Guid logradouroId) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Services\UsuarioService.cs:line 48
+   at Afetto_.Net.Controllers.UsuarioController.GetByLogradouro(Guid logradouroId) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Controllers\Usuariocontroller.cs:line 73
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[2026-09-08 21:50:27 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /api/usuarios respondeu 400 em 1.2186ms
+[2026-09-08 21:50:27 ERR] Serilog.AspNetCore.RequestLoggingMiddleware HTTP DELETE /api/usuarios/64b65b64-e5f8-4891-a49e-334581f39987 respondeu 500 em 3.2476ms
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at Afetto_.Net.Repositories.UsuarioRepository.QueryComEndereco() in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 18
+   at Afetto_.Net.Repositories.UsuarioRepository.GetByIdAsync(Guid id) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 30
+   at Afetto_.Net.Services.UsuarioService.DeleteAsync(Guid id) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Services\UsuarioService.cs:line 115
+   at Afetto_.Net.Controllers.UsuarioController.Delete(Guid id) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Controllers\Usuariocontroller.cs:line 143
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[2026-09-08 21:50:27 ERR] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/usuarios/cidade/964f8c12-50bd-4970-8c67-e79e021bb5d9 respondeu 500 em 3.4169ms
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at Afetto_.Net.Repositories.UsuarioRepository.QueryComEndereco() in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 18
+   at Afetto_.Net.Repositories.UsuarioRepository.GetByCidadeAsync(Guid cidadeId) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 46
+   at Afetto_.Net.Services.UsuarioService.GetByCidadeAsync(Guid cidadeId) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Services\UsuarioService.cs:line 55
+   at Afetto_.Net.Controllers.UsuarioController.GetByCidade(Guid cidadeId) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Controllers\Usuariocontroller.cs:line 86
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[2026-09-08 21:50:27 ERR] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/usuarios/f4b361ce-00a6-40b5-aef2-d041d5c6c92c respondeu 500 em 0.4810ms
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at Afetto_.Net.Repositories.UsuarioRepository.QueryComEndereco() in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 18
+   at Afetto_.Net.Repositories.UsuarioRepository.GetByIdAsync(Guid id) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 30
+   at Afetto_.Net.Services.UsuarioService.GetByIdAsync(Guid id) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Services\UsuarioService.cs:line 27
+   at Afetto_.Net.Controllers.UsuarioController.GetById(Guid id) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Controllers\Usuariocontroller.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[2026-09-08 21:50:27 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /health/live respondeu 200 em 6.9443ms
+[2026-09-08 21:50:27 ERR] Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService Health check oracle with status "Unhealthy" completed after 1.8573ms with message 'Oracle Database inacessível.'
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.Microsoft.EntityFrameworkCore.Storage.IDatabaseFacadeDependenciesAccessor.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetFacadeDependencies(DatabaseFacade databaseFacade)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at Afetto_.Net.HealthChecks.OracleHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in F:\visualstudio\Afetto-.Net\Afetto-.Net\HealthChecks\OracleHealthCheck.cs:line 23
+[2026-09-08 21:50:27 ERR] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /health respondeu 503 em 12.6422ms
+[2026-09-08 21:50:27 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP PUT /api/usuarios/5df0feb9-2c2e-460b-9026-69c3fd56d1bc respondeu 400 em 3.4193ms
+[2026-09-08 21:50:27 ERR] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/usuarios/cpf/00000000000 respondeu 500 em 3.5591ms
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at Afetto_.Net.Repositories.UsuarioRepository.QueryComEndereco() in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 18
+   at Afetto_.Net.Repositories.UsuarioRepository.GetByCpfAsync(String cpf) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 37
+   at Afetto_.Net.Services.UsuarioService.GetByCpfAsync(String cpf) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Services\UsuarioService.cs:line 41
+   at Afetto_.Net.Controllers.UsuarioController.GetByCpf(String cpf) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Controllers\Usuariocontroller.cs:line 60
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[2026-09-08 21:50:27 ERR] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/usuarios/email/naoexiste@email.com respondeu 500 em 3.7496ms
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at Afetto_.Net.Repositories.UsuarioRepository.QueryComEndereco() in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 18
+   at Afetto_.Net.Repositories.UsuarioRepository.GetByEmailAsync(String email) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 33
+   at Afetto_.Net.Services.UsuarioService.GetByEmailAsync(String email) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Services\UsuarioService.cs:line 34
+   at Afetto_.Net.Controllers.UsuarioController.GetByEmail(String email) in F:\visualstudio\Afetto-.Net\Afetto-.Net\Controllers\Usuariocontroller.cs:line 47
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[2026-09-08 21:50:27 ERR] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/usuarios respondeu 500 em 3.6615ms
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at Afetto_.Net.Repositories.UsuarioRepository.QueryComEndereco() in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 18
+   at Afetto_.Net.Repositories.UsuarioRepository.GetAllAsync() in F:\visualstudio\Afetto-.Net\Afetto-.Net\Repositories\UsuarioRepository.cs:line 27
+   at Afetto_.Net.Services.UsuarioService.GetAllAsync() in F:\visualstudio\Afetto-.Net\Afetto-.Net\Services\UsuarioService.cs:line 20
+   at Afetto_.Net.Controllers.UsuarioController.GetAll() in F:\visualstudio\Afetto-.Net\Afetto-.Net\Controllers\Usuariocontroller.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[2026-09-08 21:51:43 INF]  Iniciando PetOS API...
+[2026-09-08 21:51:43 INF]  PetOS API iniciada com sucesso.
+[2026-09-08 21:51:43 WRN] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware Failed to determine the https port for redirect.
+[2026-09-08 21:51:43 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/usuarios/651e71de-b5df-40ab-b634-6a2362bdceee respondeu 404 em 179.1382ms
+[2026-09-08 21:51:44 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /api/usuarios respondeu 400 em 26.6082ms
+[2026-09-08 21:51:44 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP PUT /api/usuarios/429ba32d-db5e-4c58-a842-5d95f9f4adf6 respondeu 400 em 8.4240ms
+[2026-09-08 21:51:44 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/usuarios/logradouro/2813626f-f7c0-4837-bc36-63c7013178dc respondeu 404 em 48.2089ms
+[2026-09-08 21:51:44 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /api/usuarios respondeu 400 em 1.1521ms
+[2026-09-08 21:51:44 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP DELETE /api/usuarios/7a36f2ea-7f2d-43e6-9c27-9b8f55999052 respondeu 404 em 5.0766ms
+[2026-09-08 21:51:44 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/usuarios/cidade/d748d5ee-1174-4ab4-9863-4bdde266b48c respondeu 404 em 27.7515ms
+[2026-09-08 21:51:44 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/usuarios/ba383b2b-422b-4329-adc2-700e62ec844b respondeu 404 em 0.7919ms
+[2026-09-08 21:51:44 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /health/live respondeu 200 em 7.5152ms
+[2026-09-08 21:51:44 ERR] Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService Health check oracle with status "Unhealthy" completed after 7.0211ms with message 'Oracle Database inacessível.'
+System.InvalidOperationException: Relational-specific methods can only be used when the context is using a relational database provider.
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetFacadeDependencies(DatabaseFacade databaseFacade)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at Afetto_.Net.HealthChecks.OracleHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in F:\visualstudio\Afetto-.Net\Afetto-.Net\HealthChecks\OracleHealthCheck.cs:line 23
+[2026-09-08 21:51:44 ERR] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /health respondeu 503 em 20.7300ms
+[2026-09-08 21:51:44 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP PUT /api/usuarios/1bf3a654-0fec-4725-8ee1-221659fa102b respondeu 404 em 3.3013ms
+[2026-09-08 21:51:44 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/usuarios/cpf/00000000000 respondeu 404 em 44.8331ms
+[2026-09-08 21:51:44 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/usuarios/email/naoexiste@email.com respondeu 404 em 29.9609ms
+[2026-09-08 21:51:44 INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/usuarios respondeu 200 em 28.0026ms

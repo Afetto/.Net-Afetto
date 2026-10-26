@@ -26,6 +26,50 @@ namespace Afetto_.Net.Repositories
         public async Task<IEnumerable<Usuario>> GetAllAsync() =>
             await QueryComEndereco().ToListAsync();
 
+        public async Task<(IReadOnlyList<Usuario> Items, int Total)> GetPagedAsync(UsuarioFiltro filtro)
+        {
+            var query = QueryComEndereco();
+
+            if (!string.IsNullOrWhiteSpace(filtro.Nome))
+            {
+                var nome = filtro.Nome.Trim().ToLower();
+                query = query.Where(u => u.Nome.ToLower().Contains(nome));
+            }
+
+            if (!string.IsNullOrWhiteSpace(filtro.Email))
+            {
+                var email = filtro.Email.Trim().ToLower();
+                query = query.Where(u => u.Email.ToLower().Contains(email));
+            }
+
+            if (filtro.CidadeId.HasValue)
+                query = query.Where(u => u.Logradouro.Bairro.CidadeId == filtro.CidadeId.Value);
+
+            if (filtro.LogradouroId.HasValue)
+                query = query.Where(u => u.LogradouroId == filtro.LogradouroId.Value);
+
+            var total = await query.CountAsync();
+
+            // ThenBy(Id) garante ordem estável entre páginas (empates no campo principal)
+            var itens = await Ordenar(query, filtro.Ordenacao, filtro.Descendente)
+                .ThenBy(u => u.Id)
+                .Skip(filtro.Skip)
+                .Take(filtro.Take)
+                .ToListAsync();
+
+            return (itens, total);
+        }
+
+        private static IOrderedQueryable<Usuario> Ordenar(
+            IQueryable<Usuario> query, UsuarioOrdenacao ordenacao, bool descendente) =>
+            ordenacao switch
+            {
+                UsuarioOrdenacao.Email => descendente ? query.OrderByDescending(u => u.Email) : query.OrderBy(u => u.Email),
+                UsuarioOrdenacao.DataNasc => descendente ? query.OrderByDescending(u => u.DataNasc) : query.OrderBy(u => u.DataNasc),
+                UsuarioOrdenacao.CreatedAt => descendente ? query.OrderByDescending(u => u.CreatedAt) : query.OrderBy(u => u.CreatedAt),
+                _ => descendente ? query.OrderByDescending(u => u.Nome) : query.OrderBy(u => u.Nome)
+            };
+
         public async Task<Usuario?> GetByIdAsync(Guid id) =>
             await QueryComEndereco().FirstOrDefaultAsync(u => u.Id == id);
 

@@ -6,6 +6,7 @@ namespace Afetto_.Net.Services
     public interface IUsuarioService
     {
         Task<IEnumerable<UsuarioResponse>> GetAllAsync();
+        Task<PagedResponse<UsuarioResponse>> GetPagedAsync(UsuarioQueryParameters query);
         Task<UsuarioResponse?> GetByIdAsync(Guid id);
         Task<UsuarioResponse?> GetByEmailAsync(string email);
         Task<UsuarioResponse?> GetByCpfAsync(string cpf);

@@ -6,6 +6,7 @@ namespace Afetto_.Net.Repositories
     public interface IUsuarioRepository
     {
         Task<IEnumerable<Usuario>> GetAllAsync();
+        Task<(IReadOnlyList<Usuario> Items, int Total)> GetPagedAsync(UsuarioFiltro filtro);
         Task<Usuario?> GetByIdAsync(Guid id);
         Task<Usuario?> GetByEmailAsync(string email);
         Task<Usuario?> GetByCpfAsync(string cpf);

@@ -21,6 +21,35 @@ namespace Afetto_.Net.Services
             return usuarios.Select(ParaResponse);
         }
 
+        // ── GET PAGINADO (filtros + ordenação) ────────────────────────────────
+        public async Task<PagedResponse<UsuarioResponse>> GetPagedAsync(UsuarioQueryParameters query)
+        {
+            var filtro = new UsuarioFiltro
+            {
+                Nome = query.Nome,
+                Email = query.Email,
+                CidadeId = query.CidadeId,
+                LogradouroId = query.LogradouroId,
+                Ordenacao = Enum.TryParse<UsuarioOrdenacao>(query.SortBy, ignoreCase: true, out var ordenacao)
+                    ? ordenacao
+                    : UsuarioOrdenacao.Nome,
+                Descendente = string.Equals(query.SortDir, "desc", StringComparison.OrdinalIgnoreCase),
+                Skip = (query.Page - 1) * query.PageSize,
+                Take = query.PageSize
+            };
+
+            var (itens, total) = await _repo.GetPagedAsync(filtro);
+
+            return new PagedResponse<UsuarioResponse>
+            {
+                Items = itens.Select(ParaResponse).ToList(),
+                Page = query.Page,
+                PageSize = query.PageSize,
+                TotalItems = total,
+                TotalPages = (int)Math.Ceiling(total / (double)query.PageSize)
+            };
+        }
+
         // ── GET BY ID ─────────────────────────────────────────────────────────
         public async Task<UsuarioResponse?> GetByIdAsync(Guid id)
         {

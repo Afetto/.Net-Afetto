@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Http;
 using Afetto_.Net.DTOs;
+using Afetto_.Net.Hateoas;
 using Afetto_.Net.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Afetto_.Net.Controllers
 {
@@ -18,13 +19,24 @@ namespace Afetto_.Net.Controllers
             _service = service;
         }
 
-        /// <summary>Retorna todos os usuários cadastrados.</summary>
+        /// <summary>
+        /// Lista usuários com paginação, ordenação e filtros. Retorna links HATEOAS.
+        /// </summary>
+        /// <remarks>
+        /// Exemplo: <c>GET /api/usuarios?page=1&amp;pageSize=10&amp;sortBy=nome&amp;sortDir=asc&amp;nome=maria</c>
+        /// </remarks>
         [HttpGet]
-        [ProducesResponseType(typeof(IEnumerable<UsuarioResponse>), 200)]
-        public async Task<IActionResult> GetAll()
+        [ProducesResponseType(typeof(PagedResponse<UsuarioResponse>), 200)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
+        public async Task<IActionResult> GetAll([FromQuery] UsuarioQueryParameters query)
         {
-            var usuarios = await _service.GetAllAsync();
-            return Ok(usuarios);
+            var pagina = await _service.GetPagedAsync(query);
+
+            pagina.Items.AdicionarLinks(Url, Request.Scheme);
+            pagina.AdicionarLinks(Url, Request.Scheme, query);
+
+            return Ok(pagina);
         }
 
         /// <summary>Retorna um usuário pelo ID.</summary>
@@ -37,6 +49,7 @@ namespace Afetto_.Net.Controllers
             if (usuario is null)
                 return NotFound(new { message = $"Usuário com ID '{id}' não encontrado." });
 
+            usuario.AdicionarLinks(Url, Request.Scheme);
             return Ok(usuario);
         }
 
@@ -50,6 +63,7 @@ namespace Afetto_.Net.Controllers
             if (usuario is null)
                 return NotFound(new { message = $"Usuário com e-mail '{email}' não encontrado." });
 
+            usuario.AdicionarLinks(Url, Request.Scheme);
             return Ok(usuario);
         }
 
@@ -63,6 +77,7 @@ namespace Afetto_.Net.Controllers
             if (usuario is null)
                 return NotFound(new { message = $"Usuário com CPF '{cpf}' não encontrado." });
 
+            usuario.AdicionarLinks(Url, Request.Scheme);
             return Ok(usuario);
         }
 
@@ -72,10 +87,11 @@ namespace Afetto_.Net.Controllers
         [ProducesResponseType(404)]
         public async Task<IActionResult> GetByLogradouro(Guid logradouroId)
         {
-            var usuarios = await _service.GetByLogradouroAsync(logradouroId);
+            var usuarios = (await _service.GetByLogradouroAsync(logradouroId)).ToList();
             if (!usuarios.Any())
                 return NotFound(new { message = "Nenhum usuário encontrado para este logradouro." });
 
+            usuarios.AdicionarLinks(Url, Request.Scheme);
             return Ok(usuarios);
         }
 
@@ -85,14 +101,15 @@ namespace Afetto_.Net.Controllers
         [ProducesResponseType(404)]
         public async Task<IActionResult> GetByCidade(Guid cidadeId)
         {
-            var usuarios = await _service.GetByCidadeAsync(cidadeId);
+            var usuarios = (await _service.GetByCidadeAsync(cidadeId)).ToList();
             if (!usuarios.Any())
                 return NotFound(new { message = "Nenhum usuário encontrado para esta cidade." });
 
+            usuarios.AdicionarLinks(Url, Request.Scheme);
             return Ok(usuarios);
         }
 
-        /// <summary>Cria um novo usuário.</summary>
+        /// <summary>Cria um novo usuário (cadastro público, não exige token).</summary>
         [HttpPost]
         [AllowAnonymous]
         [ProducesResponseType(typeof(UsuarioResponse), 201)]
@@ -104,6 +121,7 @@ namespace Afetto_.Net.Controllers
 
             // InvalidOperationException (e-mail/CPF duplicado) é tratada pelo ExceptionHandlingMiddleware
             var criado = await _service.CreateAsync(request);
+            criado.AdicionarLinks(Url, Request.Scheme);
             return CreatedAtAction(nameof(GetById), new { id = criado.Id }, criado);
         }
 
@@ -121,6 +139,7 @@ namespace Afetto_.Net.Controllers
             if (atualizado is null)
                 return NotFound(new { message = $"Usuário com ID '{id}' não encontrado." });
 
+            atualizado.AdicionarLinks(Url, Request.Scheme);
             return Ok(atualizado);
         }
 

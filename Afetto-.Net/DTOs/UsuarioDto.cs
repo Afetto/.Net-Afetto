@@ -17,6 +17,9 @@ namespace Afetto_.Net.DTOs
         public DateTime CreatedAt { get; set; }
         public Guid LogradouroId { get; set; }
         public EnderecoResponse? Endereco { get; set; }
+
+        /// <summary>Links HATEOAS (self, update, delete).</summary>
+        public List<LinkDto> Links { get; set; } = new();
     }
 
     public class EnderecoResponse

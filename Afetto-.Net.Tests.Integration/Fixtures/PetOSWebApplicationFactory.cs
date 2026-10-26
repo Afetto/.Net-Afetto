@@ -30,10 +30,13 @@ namespace Afetto_.Net.Tests.Integration.Fixtures
                 foreach (var d in toRemove)
                     services.Remove(d);
 
-                // Registra o InMemory limpo
+                // Registra o InMemory limpo.
+                // O nome é fixado UMA vez por factory: gerar Guid dentro do lambda criaria
+                // um banco novo (vazio) a cada requisição e os dados nunca persistiriam.
+                var dbName = "TestDb_" + Guid.NewGuid().ToString("N");
                 services.AddDbContext<AppDbContext>(options =>
                 {
-                    options.UseInMemoryDatabase("TestDb_" + Guid.NewGuid().ToString("N"));
+                    options.UseInMemoryDatabase(dbName);
                 });
 
                 // Garante que o banco é criado antes dos testes

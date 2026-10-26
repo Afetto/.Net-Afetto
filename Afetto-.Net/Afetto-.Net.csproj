@@ -43,6 +43,11 @@
 		<PackageReference Include="FluentAssertions" Version="6.12.1" />
 	</ItemGroup>
 
+	<!-- Projeto usa Microsoft.NET.Sdk (não Web): sem isto os appsettings*.json não vão para bin/ -->
+	<ItemGroup>
+		<Content Include="appsettings*.json" CopyToOutputDirectory="PreserveNewest" />
+	</ItemGroup>
+
 	<ItemGroup>
 		<InternalsVisibleTo Include="Afetto-.Net.Tests.Integration" />
 	</ItemGroup>

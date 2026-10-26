@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Afetto_.Net.Data;
+using Afetto_.Net.Services;
+using System.Net.Http.Headers;
 
 namespace Afetto_.Net.Tests.Integration.Fixtures
 {
@@ -47,6 +49,23 @@ namespace Afetto_.Net.Tests.Integration.Fixtures
                     logging.SetMinimumLevel(LogLevel.Error);
                 });
             });
+        }
+
+        /// <summary>Todo cliente criado pela factory já vem autenticado com um JWT válido.</summary>
+        protected override void ConfigureClient(HttpClient client)
+        {
+            base.ConfigureClient(client);
+            var tokenService = Services.GetRequiredService<ITokenService>();
+            var (token, _) = tokenService.GerarToken(Guid.NewGuid(), "Teste", "teste@petos.com");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+        }
+
+        /// <summary>Cliente sem token, para testar rotas protegidas e login.</summary>
+        public HttpClient CreateAnonymousClient()
+        {
+            var client = CreateClient();
+            client.DefaultRequestHeaders.Authorization = null;
+            return client;
         }
     }
 }

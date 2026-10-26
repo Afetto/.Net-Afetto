@@ -16,7 +16,11 @@ using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 using Serilog;
 using Serilog.Events;
+using System.Text;
 using System.Text.Json;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Afetto_.Net.Middleware;
 
 // ── SERILOG ───────────────────────────────────────────────────────────────────
 Log.Logger = new LoggerConfiguration()
@@ -62,6 +66,26 @@ try
         var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
         if (File.Exists(xmlPath))
             options.IncludeXmlComments(xmlPath);
+
+        options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+        {
+            Name = "Authorization",
+            Type = SecuritySchemeType.Http,
+            Scheme = "bearer",
+            BearerFormat = "JWT",
+            In = ParameterLocation.Header,
+            Description = "Informe apenas o token JWT (sem a palavra Bearer)."
+        });
+        options.AddSecurityRequirement(new OpenApiSecurityRequirement
+        {
+            {
+                new OpenApiSecurityScheme
+                {
+                    Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "Bearer" }
+                },
+                Array.Empty<string>()
+            }
+        });
     });
 
     // ── ORACLE + EF CORE ──────────────────────────────────────────────────────
@@ -71,6 +95,30 @@ try
     // ── INJEÇÃO DE DEPENDÊNCIA ────────────────────────────────────────────────
     builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
     builder.Services.AddScoped<IUsuarioService, UsuarioService>();
+    builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
+    builder.Services.AddScoped<ITokenService, TokenService>();
+    builder.Services.AddScoped<IAuthService, AuthService>();
+
+    // ── AUTENTICAÇÃO JWT ──────────────────────────────────────────────────────
+    var jwt = builder.Configuration.GetSection("Jwt").Get<JwtSettings>()
+              ?? throw new InvalidOperationException("Seção 'Jwt' ausente no appsettings.json.");
+
+    builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+        .AddJwtBearer(options =>
+        {
+            options.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuer = true,
+                ValidateAudience = true,
+                ValidateLifetime = true,
+                ValidateIssuerSigningKey = true,
+                ValidIssuer = jwt.Issuer,
+                ValidAudience = jwt.Audience,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwt.Key)),
+                ClockSkew = TimeSpan.Zero
+            };
+        });
+    builder.Services.AddAuthorization();
 
     // ── HEALTH CHECKS ─────────────────────────────────────────────────────────
     builder.Services.AddHealthChecks()
@@ -125,6 +173,7 @@ try
         options.MessageTemplate =
             "HTTP {RequestMethod} {RequestPath} respondeu {StatusCode} em {Elapsed:0.0000}ms";
     });
+    app.UseMiddleware<ExceptionHandlingMiddleware>();
 
     // ── HEALTH CHECK ENDPOINTS ────────────────────────────────────────────────
     app.MapHealthChecks("/health", new HealthCheckOptions
@@ -160,6 +209,7 @@ try
 
     app.UseHttpsRedirection();
     app.UseCors("AllowAll");
+    app.UseAuthentication();
     app.UseAuthorization();
     app.MapControllers();
 

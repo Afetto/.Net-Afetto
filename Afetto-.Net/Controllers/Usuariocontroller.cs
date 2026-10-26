@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using Afetto_.Net.DTOs;
 using Afetto_.Net.Services;
@@ -6,6 +7,7 @@ using Afetto_.Net.Services;
 namespace Afetto_.Net.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("api/usuarios")]
     public class UsuarioController : ControllerBase
     {
@@ -92,6 +94,7 @@ namespace Afetto_.Net.Controllers
 
         /// <summary>Cria um novo usuário.</summary>
         [HttpPost]
+        [AllowAnonymous]
         [ProducesResponseType(typeof(UsuarioResponse), 201)]
         [ProducesResponseType(400)]
         public async Task<IActionResult> Create([FromBody] CreateUsuarioRequest request)
@@ -99,15 +102,9 @@ namespace Afetto_.Net.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            try
-            {
-                var criado = await _service.CreateAsync(request);
-                return CreatedAtAction(nameof(GetById), new { id = criado.Id }, criado);
-            }
-            catch (InvalidOperationException ex)
-            {
-                return BadRequest(new { message = ex.Message });
-            }
+            // InvalidOperationException (e-mail/CPF duplicado) é tratada pelo ExceptionHandlingMiddleware
+            var criado = await _service.CreateAsync(request);
+            return CreatedAtAction(nameof(GetById), new { id = criado.Id }, criado);
         }
 
         /// <summary>Atualiza os dados de um usuário existente.</summary>
@@ -120,18 +117,11 @@ namespace Afetto_.Net.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            try
-            {
-                var atualizado = await _service.UpdateAsync(id, request);
-                if (atualizado is null)
-                    return NotFound(new { message = $"Usuário com ID '{id}' não encontrado." });
+            var atualizado = await _service.UpdateAsync(id, request);
+            if (atualizado is null)
+                return NotFound(new { message = $"Usuário com ID '{id}' não encontrado." });
 
-                return Ok(atualizado);
-            }
-            catch (InvalidOperationException ex)
-            {
-                return BadRequest(new { message = ex.Message });
-            }
+            return Ok(atualizado);
         }
 
         /// <summary>Remove um usuário pelo ID.</summary>

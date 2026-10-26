@@ -1,9 +1,9 @@
-﻿using Afetto_.Net.DTOs;
+using System.Net;
+using System.Text.Json;
+using System.Text;
+using Afetto_.Net.Application.DTOs;
 using Afetto_.Net.Tests.Integration.Fixtures;
 using FluentAssertions;
-using System.Net;
-using System.Text;
-using System.Text.Json;
 using Xunit;
 
 namespace Afetto_.Net.Tests.Integration.Controllers

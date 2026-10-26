@@ -1,4 +1,5 @@
-using Afetto_.Net.DTOs;
+using Afetto_.Net.Application.DTOs;
+using Afetto_.Net.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Afetto_.Net.Hateoas

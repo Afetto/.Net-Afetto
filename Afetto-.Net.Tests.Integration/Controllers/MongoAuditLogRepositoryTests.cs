@@ -1,6 +1,6 @@
-using Afetto_.Net.Data;
-using Afetto_.Net.Models;
-using Afetto_.Net.Repositories;
+using Afetto_.Net.Domain.Entities;
+using Afetto_.Net.Domain.Filters;
+using Afetto_.Net.Infrastructure.Mongo;
 using Afetto_.Net.Tests.Integration.Fixtures;
 using FluentAssertions;
 using Microsoft.Extensions.Options;

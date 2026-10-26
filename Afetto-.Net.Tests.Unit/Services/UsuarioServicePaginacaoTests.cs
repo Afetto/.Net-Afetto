@@ -1,7 +1,8 @@
-using Afetto_.Net.DTOs;
-using Afetto_.Net.Models;
-using Afetto_.Net.Repositories;
-using Afetto_.Net.Services;
+using Afetto_.Net.Application.DTOs;
+using Afetto_.Net.Application.Services;
+using Afetto_.Net.Domain.Entities;
+using Afetto_.Net.Domain.Filters;
+using Afetto_.Net.Domain.Interfaces;
 using FluentAssertions;
 using Moq;
 

@@ -1,29 +1,16 @@
-using Afetto_.Net.Data;
-using Afetto_.Net.HealthChecks;
-using Afetto_.Net.Repositories;
-using Afetto_.Net.Services;
+using Afetto_.Net.Extensions;
+using System.Text.Json;
+using Afetto_.Net.Middleware;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Http;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models;
 using OpenTelemetry.Metrics;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
-using Serilog;
 using Serilog.Events;
-using System.Text;
-using System.Text.Json;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using MongoDB.Driver;
-using Afetto_.Net.Middleware;
+using Serilog;
 
 // ── SERILOG ───────────────────────────────────────────────────────────────────
 Log.Logger = new LoggerConfiguration()
@@ -51,112 +38,16 @@ try
     // ── SERILOG no pipeline ───────────────────────────────────────────────────
     builder.Host.UseSerilog();
 
-    // ── CONTROLLERS ───────────────────────────────────────────────────────────
+    // ── API (apresentação) ────────────────────────────────────────────────────
     builder.Services.AddControllers();
+    builder.Services.AddSwaggerDocumentation();
+    builder.Services.AddCurrentUser();
+    builder.Services.AddJwtAuthentication(builder.Configuration);
 
-    // ── SWAGGER / OPENAPI ─────────────────────────────────────────────────────
-    builder.Services.AddEndpointsApiExplorer();
-    builder.Services.AddSwaggerGen(options =>
-    {
-        options.SwaggerDoc("v1", new OpenApiInfo
-        {
-            Title = "PetOS API",
-            Version = "v1",
-            Description = "API do sistema PetOS — gerenciamento de saúde contínua de pets."
-        });
-
-        var xmlFile = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
-        var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-        if (File.Exists(xmlPath))
-            options.IncludeXmlComments(xmlPath);
-
-        options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-        {
-            Name = "Authorization",
-            Type = SecuritySchemeType.Http,
-            Scheme = "bearer",
-            BearerFormat = "JWT",
-            In = ParameterLocation.Header,
-            Description = "Informe apenas o token JWT (sem a palavra Bearer)."
-        });
-        options.AddSecurityRequirement(new OpenApiSecurityRequirement
-        {
-            {
-                new OpenApiSecurityScheme
-                {
-                    Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "Bearer" }
-                },
-                Array.Empty<string>()
-            }
-        });
-    });
-
-    // ── ORACLE + EF CORE ──────────────────────────────────────────────────────
-    builder.Services.AddDbContext<AppDbContext>(options =>
-        options.UseOracle(builder.Configuration.GetConnectionString("OracleConnection")));
-
-    // ── INJEÇÃO DE DEPENDÊNCIA ────────────────────────────────────────────────
-    builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
-    // UsuarioService real + decorator que audita escritas no MongoDB
-    builder.Services.AddHttpContextAccessor();
-    builder.Services.AddScoped<UsuarioService>();
-    builder.Services.AddScoped<IUsuarioService>(sp => new AuditedUsuarioService(
-        sp.GetRequiredService<UsuarioService>(),
-        sp.GetRequiredService<IAuditLogRepository>(),
-        sp.GetRequiredService<IHttpContextAccessor>(),
-        sp.GetRequiredService<ILogger<AuditedUsuarioService>>()));
-
-    // ── MONGODB (NoSQL: auditoria) ────────────────────────────────────────────
-    // Connection string em appsettings "MongoDb:ConnectionString" ou variável de ambiente
-    // MongoDb__ConnectionString (ex.: Atlas mongodb+srv://...), sem alterar código.
-    builder.Services.Configure<MongoSettings>(builder.Configuration.GetSection("MongoDb"));
-    builder.Services.AddSingleton<IMongoClient>(sp =>
-    {
-        var mongo = sp.GetRequiredService<IOptions<MongoSettings>>().Value;
-        var clientSettings = MongoClientSettings.FromConnectionString(mongo.ConnectionString);
-        clientSettings.ServerSelectionTimeout = TimeSpan.FromSeconds(mongo.TimeoutSeconds);
-        return new MongoClient(clientSettings);
-    });
-    builder.Services.AddSingleton<IAuditLogRepository, MongoAuditLogRepository>();
-    builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
-    builder.Services.AddScoped<ITokenService, TokenService>();
-    builder.Services.AddScoped<IAuthService, AuthService>();
-
-    // ── AUTENTICAÇÃO JWT ──────────────────────────────────────────────────────
-    var jwt = builder.Configuration.GetSection("Jwt").Get<JwtSettings>()
-              ?? throw new InvalidOperationException("Seção 'Jwt' ausente no appsettings.json.");
-
-    builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-        .AddJwtBearer(options =>
-        {
-            options.TokenValidationParameters = new TokenValidationParameters
-            {
-                ValidateIssuer = true,
-                ValidateAudience = true,
-                ValidateLifetime = true,
-                ValidateIssuerSigningKey = true,
-                ValidIssuer = jwt.Issuer,
-                ValidAudience = jwt.Audience,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwt.Key)),
-                ClockSkew = TimeSpan.Zero
-            };
-        });
-    builder.Services.AddAuthorization();
-
-    // ── HEALTH CHECKS ─────────────────────────────────────────────────────────
-    builder.Services.AddHealthChecks()
-        .AddCheck<ApiHealthCheck>(
-            name: "api",
-            failureStatus: HealthStatus.Degraded,
-            tags: new[] { "api", "live" })
-        .AddCheck<OracleHealthCheck>(
-            name: "oracle",
-            failureStatus: HealthStatus.Unhealthy,
-            tags: new[] { "database", "oracle", "ready" })
-        .AddCheck<MongoHealthCheck>(
-            name: "mongodb",
-            failureStatus: HealthStatus.Degraded, // auditoria não é crítica: API segue funcionando
-            tags: new[] { "database", "mongo", "ready" });
+    // ── CAMADAS: Application → Infrastructure ─────────────────────────────────
+    builder.Services.AddApplication();
+    builder.Services.AddInfrastructure(builder.Configuration);
+    builder.Services.AddPetOSHealthChecks();
 
     // ── OPENTELEMETRY ─────────────────────────────────────────────────────────
     // Só ativa OpenTelemetry fora do ambiente de testes
@@ -243,7 +134,7 @@ try
     Log.Information("PetOS API iniciada com sucesso.");
     app.Run();
 }
-catch (Exception ex)
+catch (Exception ex) when (ex is not HostAbortedException)
 {
     Log.Fatal(ex, "PetOS API encerrada inesperadamente.");
 }

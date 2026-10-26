@@ -1,12 +1,12 @@
-using Afetto_.Net.Data;
-using Afetto_.Net.DTOs;
-using Afetto_.Net.Models;
-using Afetto_.Net.Repositories;
+using System.Net.Http.Json;
+using System.Net;
+using Afetto_.Net.Application.DTOs;
+using Afetto_.Net.Domain.Entities;
+using Afetto_.Net.Domain.Interfaces;
+using Afetto_.Net.Infrastructure.Persistence;
 using Afetto_.Net.Tests.Integration.Fixtures;
 using FluentAssertions;
 using Microsoft.Extensions.DependencyInjection;
-using System.Net;
-using System.Net.Http.Json;
 using Xunit;
 
 namespace Afetto_.Net.Tests.Integration.Controllers

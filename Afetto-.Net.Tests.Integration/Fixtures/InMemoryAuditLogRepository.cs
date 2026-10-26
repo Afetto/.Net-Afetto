@@ -1,5 +1,6 @@
-using Afetto_.Net.Models;
-using Afetto_.Net.Repositories;
+using Afetto_.Net.Domain.Entities;
+using Afetto_.Net.Domain.Filters;
+using Afetto_.Net.Domain.Interfaces;
 
 namespace Afetto_.Net.Tests.Integration.Fixtures
 {

@@ -1,5 +1,7 @@
-using Afetto_.Net.DTOs;
-using Afetto_.Net.Repositories;
+using Afetto_.Net.Application.DTOs;
+using Afetto_.Net.Domain.Entities;
+using Afetto_.Net.Domain.Filters;
+using Afetto_.Net.Domain.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

@@ -1,6 +1,6 @@
-using System.Net;
 using System.Net.Http.Json;
-using Afetto_.Net.DTOs;
+using System.Net;
+using Afetto_.Net.Application.DTOs;
 using Afetto_.Net.Tests.Integration.Fixtures;
 using FluentAssertions;
 using Xunit;

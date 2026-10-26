@@ -1,10 +1,11 @@
-﻿using Afetto_.Net.DTOs;
-using Afetto_.Net.Models;
-using Afetto_.Net.Repositories;
-using Afetto_.Net.Services;
+using System.Timers;
+using Afetto_.Net.Application.DTOs;
+using Afetto_.Net.Application.Interfaces;
+using Afetto_.Net.Application.Services;
+using Afetto_.Net.Domain.Entities;
+using Afetto_.Net.Domain.Interfaces;
 using FluentAssertions;
 using Moq;
-using System.Timers;
 
 namespace Afetto_.Net.Tests.Unit.Services
 {

@@ -1,13 +1,13 @@
-﻿using Microsoft.AspNetCore.Hosting;
+using System.Net.Http.Headers;
+using Afetto_.Net.Application.Interfaces;
+using Afetto_.Net.Domain.Interfaces;
+using Afetto_.Net.Infrastructure.Persistence;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Afetto_.Net.Data;
-using Afetto_.Net.Repositories;
-using Afetto_.Net.Services;
-using System.Net.Http.Headers;
 
 namespace Afetto_.Net.Tests.Integration.Fixtures
 {

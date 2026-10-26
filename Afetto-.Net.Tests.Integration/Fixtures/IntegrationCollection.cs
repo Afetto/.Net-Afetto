@@ -1,4 +1,3 @@
-﻿using Afetto_.Net.Tests.Integration.Fixtures;
 using Xunit;
 
 namespace Afetto_.Net.Tests.Integration.Fixtures

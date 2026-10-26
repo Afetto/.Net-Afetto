@@ -1,5 +1,5 @@
-using Afetto_.Net.DTOs;
-using Afetto_.Net.Services;
+using Afetto_.Net.Application.DTOs;
+using Afetto_.Net.Application.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

@@ -1,9 +1,9 @@
-using Afetto_.Net.DTOs;
-using Afetto_.Net.Models;
-using Afetto_.Net.Repositories;
-using Afetto_.Net.Services;
+using Afetto_.Net.Application.DTOs;
+using Afetto_.Net.Application.Interfaces;
+using Afetto_.Net.Application.Services;
+using Afetto_.Net.Domain.Entities;
+using Afetto_.Net.Domain.Interfaces;
 using FluentAssertions;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging.Abstractions;
 using Moq;
 
@@ -13,13 +13,14 @@ namespace Afetto_.Net.Tests.Unit.Services
     {
         private readonly Mock<IUsuarioService> _inner = new();
         private readonly Mock<IAuditLogRepository> _audit = new();
-        private readonly Mock<IHttpContextAccessor> _http = new();
+        private readonly Mock<ICurrentUserService> _currentUser = new();
         private readonly AuditedUsuarioService _sut;
 
         public AuditedUsuarioServiceTests()
         {
+            _currentUser.SetupGet(c => c.Identificador).Returns("anonimo");
             _sut = new AuditedUsuarioService(
-                _inner.Object, _audit.Object, _http.Object,
+                _inner.Object, _audit.Object, _currentUser.Object,
                 NullLogger<AuditedUsuarioService>.Instance);
         }
 
@@ -148,6 +149,21 @@ namespace Afetto_.Net.Tests.Unit.Services
             // Assert
             result!.Id.Should().Be(id);
             _audit.Verify(a => a.RegistrarAsync(It.IsAny<AuditLog>(), It.IsAny<CancellationToken>()), Times.Never);
+        }
+
+        [Fact]
+        public async Task DeleteAsync_UsuarioAutenticado_RegistraIdentificadorDoUsuarioCorrente()
+        {
+            // Arrange
+            _currentUser.SetupGet(c => c.Identificador).Returns("maria@petos.com");
+            _inner.Setup(s => s.DeleteAsync(It.IsAny<Guid>())).ReturnsAsync(true);
+
+            // Act
+            await _sut.DeleteAsync(Guid.NewGuid());
+
+            // Assert
+            _audit.Verify(a => a.RegistrarAsync(
+                It.Is<AuditLog>(l => l.Usuario == "maria@petos.com"), It.IsAny<CancellationToken>()), Times.Once);
         }
     }
 }

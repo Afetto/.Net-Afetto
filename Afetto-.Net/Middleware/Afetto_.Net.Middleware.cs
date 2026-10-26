@@ -1,10 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+using System.Text.Json;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using System.Text.Json;
-
 
 namespace Afetto_.Net.Middleware
 {

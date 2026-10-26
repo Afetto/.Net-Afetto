@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Afetto_.Net.Data;
+using Afetto_.Net.Repositories;
 using Afetto_.Net.Services;
 using System.Net.Http.Headers;
 
@@ -14,6 +16,14 @@ namespace Afetto_.Net.Tests.Integration.Fixtures
         protected override void ConfigureWebHost(IWebHostBuilder builder)
         {
             builder.UseEnvironment("Testing");
+
+            // Mongo inacessível nos testes: falha rápida no health check (o repositório é trocado por fake abaixo)
+            builder.ConfigureAppConfiguration((_, config) =>
+                config.AddInMemoryCollection(new Dictionary<string, string?>
+                {
+                    ["MongoDb:ConnectionString"] = "mongodb://127.0.0.1:1",
+                    ["MongoDb:TimeoutSeconds"] = "1"
+                }));
 
             builder.ConfigureServices(services =>
             {
@@ -38,6 +48,11 @@ namespace Afetto_.Net.Tests.Integration.Fixtures
                 {
                     options.UseInMemoryDatabase(dbName);
                 });
+
+                // Troca o MongoDB por um repositório de auditoria em memória
+                var mongoRepo = services.Where(d => d.ServiceType == typeof(IAuditLogRepository)).ToList();
+                foreach (var d in mongoRepo) services.Remove(d);
+                services.AddSingleton<IAuditLogRepository, InMemoryAuditLogRepository>();
 
                 // Garante que o banco é criado antes dos testes
                 var sp = services.BuildServiceProvider();

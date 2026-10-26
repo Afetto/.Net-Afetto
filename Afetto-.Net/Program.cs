@@ -20,6 +20,9 @@ using System.Text;
 using System.Text.Json;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using MongoDB.Driver;
 using Afetto_.Net.Middleware;
 
 // ── SERILOG ───────────────────────────────────────────────────────────────────
@@ -94,7 +97,27 @@ try
 
     // ── INJEÇÃO DE DEPENDÊNCIA ────────────────────────────────────────────────
     builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
-    builder.Services.AddScoped<IUsuarioService, UsuarioService>();
+    // UsuarioService real + decorator que audita escritas no MongoDB
+    builder.Services.AddHttpContextAccessor();
+    builder.Services.AddScoped<UsuarioService>();
+    builder.Services.AddScoped<IUsuarioService>(sp => new AuditedUsuarioService(
+        sp.GetRequiredService<UsuarioService>(),
+        sp.GetRequiredService<IAuditLogRepository>(),
+        sp.GetRequiredService<IHttpContextAccessor>(),
+        sp.GetRequiredService<ILogger<AuditedUsuarioService>>()));
+
+    // ── MONGODB (NoSQL: auditoria) ────────────────────────────────────────────
+    // Connection string em appsettings "MongoDb:ConnectionString" ou variável de ambiente
+    // MongoDb__ConnectionString (ex.: Atlas mongodb+srv://...), sem alterar código.
+    builder.Services.Configure<MongoSettings>(builder.Configuration.GetSection("MongoDb"));
+    builder.Services.AddSingleton<IMongoClient>(sp =>
+    {
+        var mongo = sp.GetRequiredService<IOptions<MongoSettings>>().Value;
+        var clientSettings = MongoClientSettings.FromConnectionString(mongo.ConnectionString);
+        clientSettings.ServerSelectionTimeout = TimeSpan.FromSeconds(mongo.TimeoutSeconds);
+        return new MongoClient(clientSettings);
+    });
+    builder.Services.AddSingleton<IAuditLogRepository, MongoAuditLogRepository>();
     builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
     builder.Services.AddScoped<ITokenService, TokenService>();
     builder.Services.AddScoped<IAuthService, AuthService>();
@@ -129,7 +152,11 @@ try
         .AddCheck<OracleHealthCheck>(
             name: "oracle",
             failureStatus: HealthStatus.Unhealthy,
-            tags: new[] { "database", "oracle", "ready" });
+            tags: new[] { "database", "oracle", "ready" })
+        .AddCheck<MongoHealthCheck>(
+            name: "mongodb",
+            failureStatus: HealthStatus.Degraded, // auditoria não é crítica: API segue funcionando
+            tags: new[] { "database", "mongo", "ready" });
 
     // ── OPENTELEMETRY ─────────────────────────────────────────────────────────
     // Só ativa OpenTelemetry fora do ambiente de testes

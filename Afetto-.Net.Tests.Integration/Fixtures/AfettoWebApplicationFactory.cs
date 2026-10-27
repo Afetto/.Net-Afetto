@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Afetto_.Net.Tests.Integration.Fixtures
 {
-    public class PetOSWebApplicationFactory : WebApplicationFactory<Program>
+    public class AfettoWebApplicationFactory : WebApplicationFactory<Program>
     {
         protected override void ConfigureWebHost(IWebHostBuilder builder)
         {
@@ -74,7 +74,7 @@ namespace Afetto_.Net.Tests.Integration.Fixtures
         {
             base.ConfigureClient(client);
             var tokenService = Services.GetRequiredService<ITokenService>();
-            var (token, _) = tokenService.GerarToken(Guid.NewGuid(), "Teste", "teste@petos.com");
+            var (token, _) = tokenService.GerarToken(Guid.NewGuid(), "Teste", "teste@afetto.com");
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
         }
 

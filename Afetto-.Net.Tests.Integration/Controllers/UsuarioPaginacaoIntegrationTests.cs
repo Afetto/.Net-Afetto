@@ -19,9 +19,9 @@ namespace Afetto_.Net.Tests.Integration.Controllers
         private static bool _seeded;
 
         private readonly HttpClient _client;
-        private readonly PetOSWebApplicationFactory _factory;
+        private readonly AfettoWebApplicationFactory _factory;
 
-        public UsuarioPaginacaoIntegrationTests(PetOSWebApplicationFactory factory)
+        public UsuarioPaginacaoIntegrationTests(AfettoWebApplicationFactory factory)
         {
             _factory = factory;
             _client = factory.CreateClient();

@@ -15,7 +15,7 @@ namespace Afetto_.Net.Tests.Integration.Controllers
         private static MongoAuditLogRepository CriarRepositorio(out MongoClient client, out string banco)
         {
             var conexao = Environment.GetEnvironmentVariable(MongoFactAttribute.EnvVar)!;
-            banco = "petos_test_" + Guid.NewGuid().ToString("N");
+            banco = "afetto_test_" + Guid.NewGuid().ToString("N");
             client = new MongoClient(conexao);
             var settings = Options.Create(new MongoSettings { DatabaseName = banco, AuditCollection = "audit_logs" });
             return new MongoAuditLogRepository(client, settings);

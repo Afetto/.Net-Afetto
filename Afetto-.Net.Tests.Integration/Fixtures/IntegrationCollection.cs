@@ -7,5 +7,5 @@ namespace Afetto_.Net.Tests.Integration.Fixtures
     /// Evita recriar o servidor a cada teste.
     /// </summary>
     [CollectionDefinition("Integration")]
-    public class IntegrationCollection : ICollectionFixture<PetOSWebApplicationFactory> { }
+    public class IntegrationCollection : ICollectionFixture<AfettoWebApplicationFactory> { }
 }

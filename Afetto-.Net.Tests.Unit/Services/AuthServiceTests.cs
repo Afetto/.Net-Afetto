@@ -23,7 +23,7 @@ namespace Afetto_.Net.Tests.Unit.Services
         {
             Id = Guid.NewGuid(),
             Nome = "Maria",
-            Email = "maria@petos.com",
+            Email = "maria@afetto.com",
             Senha = BCrypt.Net.BCrypt.HashPassword("Senha@123", 4)
         };
 

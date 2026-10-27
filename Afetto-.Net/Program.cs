@@ -23,7 +23,7 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.Console(outputTemplate:
         "[{Timestamp:HH:mm:ss} {Level:u3}] {SourceContext} {Message:lj}{NewLine}{Exception}")
     .WriteTo.File(
-        path: "logs/petos-.log",
+        path: "logs/afetto-.log",
         rollingInterval: RollingInterval.Day,
         outputTemplate:
             "[{Timestamp:yyyy-MM-dd HH:mm:ss} {Level:u3}] {SourceContext} {Message:lj}{NewLine}{Exception}")
@@ -31,7 +31,7 @@ Log.Logger = new LoggerConfiguration()
 
 try
 {
-    Log.Information("Iniciando PetOS API...");
+    Log.Information("Iniciando Afetto API...");
 
     var builder = WebApplication.CreateBuilder(args);
 
@@ -47,7 +47,7 @@ try
     // ── CAMADAS: Application → Infrastructure ─────────────────────────────────
     builder.Services.AddApplication();
     builder.Services.AddInfrastructure(builder.Configuration);
-    builder.Services.AddPetOSHealthChecks();
+    builder.Services.AddAfettoHealthChecks();
 
     // ── OPENTELEMETRY ─────────────────────────────────────────────────────────
     // Só ativa OpenTelemetry fora do ambiente de testes
@@ -55,7 +55,7 @@ try
     {
         builder.Services.AddOpenTelemetry()
             .ConfigureResource(resource => resource
-                .AddService(serviceName: "PetOS.API", serviceVersion: "1.0.0"))
+                .AddService(serviceName: "Afetto.API", serviceVersion: "1.0.0"))
             .WithTracing(tracing => tracing
                 .AddAspNetCoreInstrumentation(opts => opts.RecordException = true)
                 .AddEntityFrameworkCoreInstrumentation(opts => opts.SetDbStatementForText = true)
@@ -81,7 +81,7 @@ try
         app.UseSwagger();
         app.UseSwaggerUI(options =>
         {
-            options.SwaggerEndpoint("/swagger/v1/swagger.json", "PetOS API v1");
+            options.SwaggerEndpoint("/swagger/v1/swagger.json", "Afetto API v1");
             options.RoutePrefix = string.Empty;
         });
     }
@@ -131,12 +131,12 @@ try
     app.UseAuthorization();
     app.MapControllers();
 
-    Log.Information("PetOS API iniciada com sucesso.");
+    Log.Information("Afetto API iniciada com sucesso.");
     app.Run();
 }
 catch (Exception ex) when (ex is not HostAbortedException)
 {
-    Log.Fatal(ex, "PetOS API encerrada inesperadamente.");
+    Log.Fatal(ex, "Afetto API encerrada inesperadamente.");
 }
 finally
 {

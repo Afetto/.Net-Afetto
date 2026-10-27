@@ -1,8 +1,8 @@
-# MongoDB local para auditoria do PetOS:  docker compose up -d
+# MongoDB local para auditoria do Afetto:  docker compose up -d
 services:
   mongo:
     image: mongo:7
-    container_name: petos-mongo
+    container_name: afetto-mongo
     restart: unless-stopped
     ports:
       - "27017:27017"

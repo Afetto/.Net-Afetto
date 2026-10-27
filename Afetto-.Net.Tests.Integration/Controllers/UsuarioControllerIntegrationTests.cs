@@ -14,7 +14,7 @@ namespace Afetto_.Net.Tests.Integration.Controllers
         private readonly HttpClient _client;
         private readonly JsonSerializerOptions _jsonOptions;
 
-        public UsuarioControllerIntegrationTests(PetOSWebApplicationFactory factory)
+        public UsuarioControllerIntegrationTests(AfettoWebApplicationFactory factory)
         {
             _client = factory.CreateClient();
             _jsonOptions = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };

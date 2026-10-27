@@ -14,7 +14,7 @@ namespace Afetto_.Net.Infrastructure.HealthChecks
             if (isHealthy)
             {
                 return Task.FromResult(HealthCheckResult.Healthy(
-                    "API PetOS está operacional.",
+                    "API Afetto está operacional.",
                     data: new Dictionary<string, object>
                     {
                         { "version", "1.0.0" },
@@ -22,7 +22,7 @@ namespace Afetto_.Net.Infrastructure.HealthChecks
                     }));
             }
 
-            return Task.FromResult(HealthCheckResult.Unhealthy("API PetOS com problemas."));
+            return Task.FromResult(HealthCheckResult.Unhealthy("API Afetto com problemas."));
         }
     }
 }

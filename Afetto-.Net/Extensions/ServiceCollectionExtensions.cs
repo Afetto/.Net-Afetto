@@ -111,9 +111,9 @@ namespace Afetto_.Net.Extensions
             {
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "PetOS API",
+                    Title = "Afetto API",
                     Version = "v1",
-                    Description = "API do sistema PetOS — gerenciamento de saúde contínua de pets."
+                    Description = "API do sistema Afetto — gerenciamento de saúde contínua de pets."
                 });
 
                 var xmlFile = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
@@ -145,7 +145,7 @@ namespace Afetto_.Net.Extensions
         }
 
         // ── Health Checks ─────────────────────────────────────────────────────
-        public static IServiceCollection AddPetOSHealthChecks(this IServiceCollection services)
+        public static IServiceCollection AddAfettoHealthChecks(this IServiceCollection services)
         {
             services.AddHealthChecks()
                 .AddCheck<ApiHealthCheck>(

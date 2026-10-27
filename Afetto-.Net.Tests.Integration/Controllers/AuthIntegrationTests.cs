@@ -10,9 +10,9 @@ namespace Afetto_.Net.Tests.Integration.Controllers
     [Collection("Integration")]
     public class AuthIntegrationTests
     {
-        private readonly PetOSWebApplicationFactory _factory;
+        private readonly AfettoWebApplicationFactory _factory;
 
-        public AuthIntegrationTests(PetOSWebApplicationFactory factory)
+        public AuthIntegrationTests(AfettoWebApplicationFactory factory)
         {
             _factory = factory;
         }
@@ -48,7 +48,7 @@ namespace Afetto_.Net.Tests.Integration.Controllers
         {
             // Arrange
             var client = _factory.CreateAnonymousClient();
-            var request = new LoginRequest { Email = "naoexiste@petos.com", Senha = "Senha@123" };
+            var request = new LoginRequest { Email = "naoexiste@afetto.com", Senha = "Senha@123" };
 
             // Act
             var response = await client.PostAsJsonAsync("/api/auth/login", request);

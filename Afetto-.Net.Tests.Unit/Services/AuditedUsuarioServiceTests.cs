@@ -28,7 +28,7 @@ namespace Afetto_.Net.Tests.Unit.Services
         public async Task CreateAsync_Sucesso_RegistraAuditoriaCriado()
         {
             // Arrange
-            var criado = new UsuarioResponse { Id = Guid.NewGuid(), Email = "maria@petos.com" };
+            var criado = new UsuarioResponse { Id = Guid.NewGuid(), Email = "maria@afetto.com" };
             _inner.Setup(s => s.CreateAsync(It.IsAny<CreateUsuarioRequest>())).ReturnsAsync(criado);
 
             // Act
@@ -155,7 +155,7 @@ namespace Afetto_.Net.Tests.Unit.Services
         public async Task DeleteAsync_UsuarioAutenticado_RegistraIdentificadorDoUsuarioCorrente()
         {
             // Arrange
-            _currentUser.SetupGet(c => c.Identificador).Returns("maria@petos.com");
+            _currentUser.SetupGet(c => c.Identificador).Returns("maria@afetto.com");
             _inner.Setup(s => s.DeleteAsync(It.IsAny<Guid>())).ReturnsAsync(true);
 
             // Act
@@ -163,7 +163,7 @@ namespace Afetto_.Net.Tests.Unit.Services
 
             // Assert
             _audit.Verify(a => a.RegistrarAsync(
-                It.Is<AuditLog>(l => l.Usuario == "maria@petos.com"), It.IsAny<CancellationToken>()), Times.Once);
+                It.Is<AuditLog>(l => l.Usuario == "maria@afetto.com"), It.IsAny<CancellationToken>()), Times.Once);
         }
     }
 }

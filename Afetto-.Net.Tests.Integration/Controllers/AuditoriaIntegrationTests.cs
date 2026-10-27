@@ -14,10 +14,10 @@ namespace Afetto_.Net.Tests.Integration.Controllers
     [Collection("Integration")]
     public class AuditoriaIntegrationTests
     {
-        private readonly PetOSWebApplicationFactory _factory;
+        private readonly AfettoWebApplicationFactory _factory;
         private readonly HttpClient _client;
 
-        public AuditoriaIntegrationTests(PetOSWebApplicationFactory factory)
+        public AuditoriaIntegrationTests(AfettoWebApplicationFactory factory)
         {
             _factory = factory;
             _client = factory.CreateClient(); // autenticado
@@ -107,7 +107,7 @@ namespace Afetto_.Net.Tests.Integration.Controllers
             // Assert
             delete.StatusCode.Should().Be(HttpStatusCode.NoContent);
             auditoria.TotalItems.Should().Be(1);
-            auditoria.Items.Single().Usuario.Should().Be("teste@petos.com");
+            auditoria.Items.Single().Usuario.Should().Be("teste@afetto.com");
             auditoria.Items.Single().Links.Should().BeEmpty(); // recurso não existe mais
         }
 

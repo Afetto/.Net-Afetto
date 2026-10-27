@@ -4,7 +4,7 @@ namespace Afetto_.Net.Infrastructure.Mongo
     public class MongoSettings
     {
         public string ConnectionString { get; set; } = "mongodb://localhost:27017";
-        public string DatabaseName { get; set; } = "petos";
+        public string DatabaseName { get; set; } = "afetto";
         public string AuditCollection { get; set; } = "audit_logs";
 
         /// <summary>Tempo máximo (s) para encontrar o servidor Mongo antes de falhar.</summary>

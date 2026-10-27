@@ -404,9 +404,9 @@ dotnet test
 
 | Nome | RM |
 |---|---|
-| Gustavo Souto de Melo | _preencher_ |
-| Iago Liziero Pereira | _preencher_ |
-| Ícaro José dos Santos | _preencher_ |
-| Leonardo Barbosa Santos | _preencher_ |
+| Gustavo Souto de Melo | 558595 |
+| Iago Liziero Pereira | 564063 |
+| Ícaro José dos Santos | 562403 |
+| Leonardo Barbosa Santos | 558230 |
 
 **FIAP — Challenge 2026 · Advanced Business Development with .NET**
